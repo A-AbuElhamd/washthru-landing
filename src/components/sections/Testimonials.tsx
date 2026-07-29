@@ -46,7 +46,7 @@ export function Testimonials() {
             renderItem={(testimonial) => (
               // Real `.testimonial_info` order: icon badge + name + stars
               // ABOVE the quote text — not a quote-icon-first layout.
-              <figure className="flex h-full h-[300px] flex-col rounded-2xl border border-border bg-surface p-6">
+              <figure className="flex h-[300px] flex-col rounded-2xl border border-border bg-surface p-6">
                 <div className="flex items-center gap-3">
                   <Image
                     src={testimonial.iconUrl}
