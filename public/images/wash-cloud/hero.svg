@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="wc-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#081F94"/>
+      <stop offset="100%" stop-color="#0C2ED8"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#wc-bg)"/>
+
+  <!-- abstract cloud mark -->
+  <g transform="translate(600 330)" opacity="0.95">
+    <path d="M-160,40 a70,70 0 0 1 40,-132 a90,90 0 0 1 172,-18 a80,80 0 0 1 8,158 z" fill="#ffffff" opacity="0.92"/>
+    <path d="M-90,40 a70,70 0 0 1 40,-92 a70,70 0 0 1 132,-8" fill="none" stroke="#ffffff" stroke-width="0" />
+  </g>
+
+  <!-- droplet falling from the cloud -->
+  <g transform="translate(600 470)" opacity="0.95">
+    <path d="M0,-26 C15,-6 24,8 24,20 C24,35 13,46 0,46 C-13,46 -24,35 -24,20 C-24,8 -15,-6 0,-26 Z" fill="#ffffff"/>
+  </g>
+
+  <!-- signal / connectivity arcs -->
+  <g transform="translate(600 470)" stroke="#ffffff" stroke-width="5" fill="none" stroke-linecap="round">
+    <path d="M-70,-80 A100,100 0 0 1 70,-80" opacity="0.55"/>
+    <path d="M-100,-110 A140,140 0 0 1 100,-110" opacity="0.3"/>
+  </g>
+
+  <text x="600" y="640" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="40" font-weight="700" fill="#ffffff" opacity="0.95">Placeholder — Wash Cloud Illustration</text>
+  <text x="600" y="676" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="20" fill="#ffffff" opacity="0.7">Replace with real product artwork before launch</text>
+</svg>

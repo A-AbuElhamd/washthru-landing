@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="60" viewBox="0 0 240 60">
+  <rect x="0" y="8" width="44" height="44" rx="12" fill="#0C2ED8"/>
+  <path d="M22,16 C30,26 35,33 35,39 C35,46 29,51 22,51 C15,51 9,46 9,39 C9,33 14,26 22,16 Z" fill="#ffffff"/>
+  <text x="56" y="38" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="26" font-weight="800" fill="#0C2ED8">WashThru</text>
+</svg>

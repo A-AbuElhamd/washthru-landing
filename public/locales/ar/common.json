@@ -1,0 +1,72 @@
+{
+  "header": {
+    "callUs": "اتصل بنا",
+    "whatsapp": "تواصل معنا عبر واتساب"
+  },
+  "nav": {
+    "whoWeAre": "من نحن",
+    "ourProducts": "منتجاتنا",
+    "services": "الخدمات",
+    "washCloud": "واش كلاود",
+    "afterSale": "ما بعد البيع",
+    "contactUs": "تواصل معنا",
+    "knowledgeLibrary": "مكتبة المعرفة",
+    "blueprints": "المخططات",
+    "blog": "المدونة",
+    "agentLogin": "دخول الوكلاء",
+    "primaryLabel": "التنقل الرئيسي",
+    "openMenu": "فتح القائمة",
+    "more": "المزيد"
+  },
+  "site": {
+    "name": "واش ثرو"
+  },
+  "actions": {
+    "getQuote": "اطلب عرض سعر",
+    "learnMore": "اعرف المزيد",
+    "submit": "إرسال"
+  },
+  "meta": {
+    "defaultTitle": "واش ثرو | الشركة المصنعة لمكائن غسيل السيارات الأوتوماتيكية",
+    "defaultDescription": "تصمم واش ثرو وتصنّع مكائن غسيل السيارات الأوتوماتيكية وأنظمة الغسيل اللمسي للشركات في المملكة العربية السعودية وخارجها."
+  },
+  "footer": {
+    "tagline": "نصمم وننتج أنظمة غسيل سيارات أوتوماتيكية وبدون لمس، بتصنيع ودعم فني في جميع أنحاء المملكة العربية السعودية.",
+    "navLabel": "روابط الفوتر",
+    "contact": "تواصل معنا",
+    "follow": "تابعنا",
+    "copyright": "© {{year}} {{siteName}}. جميع الحقوق محفوظة.",
+    "partOfMechatronics": "إحدى علامات مجموعة ميكاترونيكس",
+    "certificationBadgeAlt": "شارة اعتماد وجودة واش ثرو",
+    "mechatronicsLogoAlt": "شعار مجموعة ميكاترونيكس"
+  },
+  "language": {
+    "switch": "English"
+  },
+  "theme": {
+    "switchToLight": "التبديل إلى الوضع الفاتح",
+    "switchToDark": "التبديل إلى الوضع الداكن"
+  },
+  "carousel": {
+    "pause": "إيقاف العرض التلقائي",
+    "play": "تشغيل العرض التلقائي",
+    "previous": "الشريحة السابقة",
+    "next": "الشريحة التالية"
+  },
+  "breadcrumbs": {
+    "home": "الرئيسية",
+    "blog": "المدونة",
+    "blueprints": "المخططات",
+    "label": "مسار التنقل"
+  },
+  "a11y": {
+    "skipToContent": "تخطَّ إلى المحتوى الرئيسي"
+  },
+  "errors": {
+    "notFoundTitle": "الصفحة غير موجودة",
+    "notFoundDescription": "الصفحة التي تبحث عنها غير موجودة أو ربما تم نقلها.",
+    "serverErrorTitle": "حدث خطأ ما",
+    "serverErrorDescription": "حدث خطأ غير متوقع من جانبنا. الرجاء المحاولة مرة أخرى بعد قليل.",
+    "backHome": "العودة إلى الرئيسية"
+  }
+}

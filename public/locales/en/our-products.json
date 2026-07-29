@@ -1,0 +1,65 @@
+{
+  "meta": {
+    "title": "Automatic Car Wash Machines & Commercial Equipment",
+    "description": "Automatic car wash machines and commercial car wash equipment engineered for performance, durability, and scalable operations."
+  },
+  "hero": {
+    "eyebrow": "Our Product Line",
+    "title": "Automatic Car Wash Machines Built for Every Facility",
+    "intro": "From compact rollover units to high-throughput tunnel systems, every WashThru machine is manufactured in Saudi Arabia and engineered to keep your business running.",
+    "imageAlt": "Illustration of the WashThru automatic car wash machine lineup"
+  },
+  "products": {
+    "heading": "Choose Your System",
+    "subheading": "Two automatic wash platforms, each built for a different facility size and throughput target.",
+    "items": [
+      {
+        "id": "rollover",
+        "name": "Rollover Machine",
+        "tagline": "Compact automatic wash for limited-size facilities",
+        "description": "We have designed the Rollover Machine to serve facilities of limited sizes. Thanks to its unique and natural factor-resistant design, this product has the ability to be placed outdoors without affecting performance or quality.",
+        "capacity": "Up to 3.5 minutes per vehicle",
+        "cta": "Explore the Rollover Machine",
+        "imageAlt": "Illustration of the WashThru Rollover automatic car wash machine"
+      },
+      {
+        "id": "tunnel",
+        "name": "Tunnel Machine",
+        "tagline": "High-throughput wash for medium and large facilities",
+        "description": "We have designed the Tunnel Machine to serve large and medium facilities, as it can wash vehicles sequentially without interruption.",
+        "capacity": "Up to 1.5 minutes per vehicle",
+        "cta": "Explore the Tunnel Machine",
+        "imageAlt": "Illustration of the WashThru Tunnel automatic car wash machine"
+      }
+    ]
+  },
+  "highlights": {
+    "heading": "Built to the Same Standard",
+    "subheading": "Whichever system fits your site, every WashThru machine shares the same manufacturing and support commitments.",
+    "items": [
+      {
+        "id": "saudiMade",
+        "icon": "Factory",
+        "title": "Saudi Made",
+        "description": "Every machine is designed and manufactured locally, so parts, service, and expertise are always close by."
+      },
+      {
+        "id": "productionSpeed",
+        "icon": "Gauge",
+        "title": "Higher Production Speed",
+        "description": "Optimized wash sequences keep vehicles moving without compromising the quality of the finish."
+      },
+      {
+        "id": "partsWarranty",
+        "icon": "ShieldCheck",
+        "title": "Warranty on Parts",
+        "description": "Every unit ships with a warranty on parts, backed by a nationwide service network."
+      }
+    ]
+  },
+  "cta": {
+    "heading": "Not sure which system fits your site?",
+    "subheading": "Tell us about your facility and our team will recommend the right machine for your throughput and space.",
+    "button": "Get a Quote"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "slug": "station-1street-small-001",
+  "locale": "en",
+  "title": "Small Station Plan – Single Street",
+  "description": "A compact single-street station layout for smaller plots, still keeping a comfortable, congestion-free flow for vehicles entering and leaving.",
+  "planType": "station",
+  "planTypeLabel": "Station",
+  "streetConfig": "one-street",
+  "streetConfigLabel": "Single street",
+  "planNumber": "S003",
+  "areaSqm": 1020,
+  "dimensions": { "widthM": 34, "depthM": 30 },
+  "sketchfabEmbedUrl": "https://sketchfab.com/models/da72a1347a4d4fa1a890c010c24ccee5/embed?annotations_visible=1&preload=1",
+  "pdfUrl": "https://cdn.prod.website-files.com/63aad373fdf77ff7df65db58/64d9fd41a5e6fb55eef71273_S003.pdf"
+}

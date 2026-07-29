@@ -1,0 +1,44 @@
+:root {
+  --color-bg: 255 255 255;
+  --color-surface: 246 247 251;
+  --color-surface-hover: 237 239 246;
+  --color-fg: 15 23 42;
+  --color-fg-muted: 100 106 122;
+  --color-border: 226 229 236;
+  --color-brand: 12 46 216;
+  --color-brand-dark: 9 34 163;
+  --color-accent: 255 176 32;
+  /* Real production "live" indicator coral (#ff741f, --coral in the source
+     site's compiled CSS) — used only for the hero's live-wash-counter pulse
+     badge, a fixed brand accent that doesn't theme-shift. Intentionally NOT
+     overridden under .dark below. */
+  --color-live: 255 116 31;
+
+  /*
+   * The real site's footer_section is a fixed brand-blue band
+   * (background-color: var(--blue) i.e. #0c2ed8, confirmed from the
+   * production compiled CSS) with white text, independent of any
+   * light/dark toggle — the source site has no dark mode at all. Reusing
+   * the theme-adaptive `--color-brand` token here would be wrong: its dark
+   * mode value (91 130 255, lightened for contrast against dark page
+   * backgrounds elsewhere) only gives ~3.45:1 contrast against white text,
+   * below WCAG AA. Pinning a dedicated pair of tokens to the exact
+   * production blue keeps the footer visually identical to the real site
+   * in both themes and preserves an ~8.8:1 contrast ratio for its white
+   * text. Intentionally NOT overridden under .dark below.
+   */
+  --color-footer-bg: 12 46 216;
+  --color-footer-fg: 255 255 255;
+}
+
+.dark {
+  --color-bg: 11 18 32;
+  --color-surface: 20 28 46;
+  --color-surface-hover: 28 38 58;
+  --color-fg: 240 242 247;
+  --color-fg-muted: 168 175 189;
+  --color-border: 40 49 68;
+  --color-brand: 91 130 255;
+  --color-brand-dark: 63 99 214;
+  --color-accent: 255 191 71;
+}

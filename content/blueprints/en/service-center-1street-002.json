@@ -1,0 +1,15 @@
+{
+  "slug": "service-center-1street-002",
+  "locale": "en",
+  "title": "Service Center Plan – Single Street (Alternate Layout)",
+  "description": "An alternate arrangement of the same footprint and dimensions as the primary single-street service center, reorganizing traffic flow and commercial-unit placement for sites that need a different entry or exit orientation.",
+  "planType": "service-center",
+  "planTypeLabel": "Service Center",
+  "streetConfig": "one-street",
+  "streetConfigLabel": "Single street",
+  "planNumber": "C002",
+  "areaSqm": 660,
+  "dimensions": { "widthM": 30, "depthM": 22 },
+  "sketchfabEmbedUrl": "https://sketchfab.com/models/3816eba7e1164e37bb454b6bdd5ed6ea/embed?annotations_visible=1&preload=1",
+  "pdfUrl": "https://cdn.prod.website-files.com/63aad373fdf77ff7df65db58/64d9fd42babe068ee16dc64d_C002.pdf"
+}

@@ -1,0 +1,33 @@
+{
+  "index": {
+    "title": "Blueprints",
+    "heading": "Ready-Made Blueprints",
+    "subtitle": "Browse ready-made layout plans for automatic car wash service centers and stations, built to help you plan a productive site before you build.",
+    "cardAreaLabel": "Area",
+    "cardTypeLabel": "Type",
+    "viewPlan": "View plan details",
+    "serviceCenterHeading": "Service Center Blueprints",
+    "stationHeading": "Station Blueprints"
+  },
+  "detail": {
+    "backToBlueprints": "Back to Blueprints",
+    "planTypeLabel": "Plan type",
+    "streetConfigLabel": "Street access",
+    "planNumberLabel": "Plan number",
+    "areaLabel": "Area",
+    "areaUnit": "{{value}} sq m",
+    "dimensionsLabel": "Dimensions",
+    "dimensionsValue": "{{width}} × {{depth}} m",
+    "modelHeading": "3D Model",
+    "modelPlaceholderTitle": "3D model viewer placeholder",
+    "modelPlaceholderBody": "Embed a real Sketchfab model here to preview this blueprint in 3D.",
+    "downloadHeading": "Blueprint PDF",
+    "downloadButton": "Download PDF",
+    "downloadButtonPlaceholder": "Download PDF (unavailable)",
+    "downloadUnavailable": "PDF download is not available in this preview.",
+    "shareHeading": "Share this plan",
+    "shareWhatsapp": "Share via WhatsApp",
+    "shareX": "Share via X",
+    "shareFacebook": "Share via Facebook"
+  }
+}

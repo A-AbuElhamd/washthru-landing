@@ -1,0 +1,55 @@
+{
+  "meta": {
+    "title": "About Us | Trusted Car Wash Technology Manufacturer",
+    "description": "WashThru is a Saudi company specialized in manufacturing automatic car wash systems, delivering smart solutions across Saudi Arabia and beyond."
+  },
+  "breadcrumbLabel": "Who We Are",
+  "hero": {
+    "title": "Higher quality, greater productivity, less effort",
+    "subtitle": "We design and manufacture automatic car wash systems built on AI and IoT technology, serving the car wash sector across Saudi Arabia and beyond."
+  },
+  "intro": {
+    "heading": "Who We Are",
+    "body": "Due to the car wash industry's need for development in terms of improving quality and productivity, WashThru was launched to provide smart solutions that help to promote the industry's development, increase service quality and reduce manpower, thus contributing to boosting profits, opening up new car wash investment opportunities and fostering industry growth.",
+    "imageAlt": "Saeed Al-Sayari, Chairman of WashThru's Board of Directors"
+  },
+  "vision": {
+    "heading": "A Vision to Drive the Economy",
+    "body": "To be one of the five world leaders in providing automated car wash solutions."
+  },
+  "mission": {
+    "heading": "Our mission",
+    "body": "We seek to provide high-quality automated car wash solutions that rely on state-of-the-art AI and IoT technologies and to export Saudi technology to global markets."
+  },
+  "values": {
+    "heading": "Our values",
+    "subheading": "The principles that shape how we work with every client and partner."
+  },
+  "goals": {
+    "heading": "Our goals",
+    "subheading": "The quality of what we build starts with the clarity of our goals."
+  },
+  "timeline": {
+    "heading": "This Is Where We Started",
+    "subheading": "Key milestones in our growth over the years.",
+    "imageAlt": "Eng. Abdulsalam Alsaiary, Administrative Consultant and WashThru board member"
+  },
+  "team": {
+    "heading": "Our Personnel, the Key of Our Success",
+    "body": "We have a professional and integrated team, including programmers, developers, engineers, technicians and administrators in all specializations, to provide our services with the highest possible efficiency.",
+    "imageAlt": "Ahmed Al-Sayari, WashThru's Executive Director and board member"
+  },
+  "methodology": {
+    "heading": "Our Methodology, the Secret of Our Efficiency",
+    "body": "We strive to use all industrial technologies to reduce dependence on human labor, and to raise productivity and quality in the car wash industry, through automation and automatic operation of modern products."
+  },
+  "partners": {
+    "heading": "Partners in success",
+    "body": "Car wash operators, dealerships, and fuel stations across Saudi Arabia trust WashThru, and we're proud of our steadily growing partner network."
+  },
+  "cta": {
+    "heading": "Have a car wash project in mind?",
+    "body": "Talk to our team about your site's requirements and get an initial consultation.",
+    "buttonLabel": "Contact us"
+  }
+}

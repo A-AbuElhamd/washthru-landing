@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900">
+  <defs>
+    <linearGradient id="g-kl4d73" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0C2ED8"/>
+      <stop offset="100%" stop-color="#081F94"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#g-kl4d73)"/>
+  <g transform="translate(600 420) scale(4.6)" opacity="0.92">
+    <path d="M0,-38 C22,-8 34,10 34,26 C34,48 18,62 0,62 C-18,62 -34,48 -34,26 C-34,10 -22,-8 0,-38 Z" fill="#ffffff"/>
+    <path d="M-46,-4 A46,46 0 0 1 46,-4" stroke="#ffffff" stroke-width="6" fill="none" stroke-linecap="round" opacity="0.55"/>
+    <path d="M-58,-18 A58,58 0 0 1 58,-18" stroke="#ffffff" stroke-width="5" fill="none" stroke-linecap="round" opacity="0.3"/>
+  </g>
+  <g transform="translate(478 610)" opacity="0.9">
+    <rect x="-58" y="-78" width="116" height="156" rx="10" fill="#ffffff" opacity="0.14"/>
+    <path d="M-34,-46 h68 M-34,-30 h68 M-34,-14 h44" stroke="#ffffff" stroke-width="5" stroke-linecap="round" opacity="0.85"/>
+  </g>
+  <g transform="translate(722 610)" opacity="0.9">
+    <rect x="-58" y="-78" width="116" height="156" rx="10" fill="#ffffff" opacity="0.14"/>
+    <path d="M-34,-46 h68 M-34,-30 h68 M-34,-14 h44" stroke="#ffffff" stroke-width="5" stroke-linecap="round" opacity="0.85"/>
+  </g>
+  <text x="600" y="820" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="34" font-weight="700" fill="#ffffff" opacity="0.95">Placeholder — Knowledge Library Illustration</text>
+  <text x="600" y="854" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="20" fill="#ffffff" opacity="0.7">Replace with real documents artwork before launch</text>
+</svg>

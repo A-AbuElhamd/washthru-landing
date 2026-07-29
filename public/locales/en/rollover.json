@@ -1,0 +1,131 @@
+{
+  "meta": {
+    "title": "Automatic Rollover Car Wash Machine | Turnkey Manufacturer",
+    "description": "Automatic rollover car wash systems for limited-size facilities. Outdoor-ready, weather-resistant design with up to 3.5 minutes per vehicle."
+  },
+  "breadcrumbLabel": "Rollover Machine",
+  "hero": {
+    "eyebrow": "Rollover System",
+    "title": "Rollover Machine",
+    "intro": "We have designed the Rollover Machine to serve facilities of limited sizes. Thanks to its unique and natural factor-resistant design, this product has the ability to be placed outdoors without affecting performance or quality, with a capacity up to 3.5 minutes per vehicle.",
+    "imageAlt": "Illustration of the WashThru Rollover automatic car wash machine",
+    "customerService": "Customer Service",
+    "badges": [
+      { "id": "saudiMade", "label": "Saudi made" },
+      { "id": "productionSpeed", "label": "Higher production speed" },
+      { "id": "partsWarranty", "label": "Warranty on parts" }
+    ]
+  },
+  "features": {
+    "heading": "How the Rollover Machine Works",
+    "subheading": "A full, sequential wash cycle engineered around the driver's convenience and the vehicle's finish.",
+    "items": [
+      {
+        "id": "auto-operation",
+        "icon": "Smartphone",
+        "title": "Fully self-service operation",
+        "description": "Runs without the need for an operating employee — the driver controls the entire wash cycle through the WashThru app."
+      },
+      {
+        "id": "smart-sensors",
+        "icon": "ScanEye",
+        "title": "Smart Sensors (IPS)",
+        "description": "Help the machine read the dimensions of the vehicle for optimal performance."
+      },
+      {
+        "id": "pre-wash",
+        "icon": "SprayCan",
+        "title": "Pre-wash spray and touchless mode",
+        "description": "A spray primer before washing helps loosen dirt, while an optional touchless mode is available to speed up washing lightly soiled vehicles."
+      },
+      {
+        "id": "brush-pressure",
+        "icon": "Hand",
+        "title": "Touch-based brush pressure analysis",
+        "description": "The brushes run on a touch-based analysis which guarantees the best pressure across every panel of the vehicle."
+      },
+      {
+        "id": "micro-foam-brushes",
+        "icon": "Sparkles",
+        "title": "Ultra-soft micro-foam brushes",
+        "description": "Ultra-soft micro-foam brushes are highly effective at picking up dirt and do not stick to any impurities or dust. An automatic brush washing system works continuously to ensure safe performance on the vehicle's paint."
+      },
+      {
+        "id": "rinse-wax",
+        "icon": "Waves",
+        "title": "Foam rinse and wax finish",
+        "description": "Rinsing the car from the foam, followed by spraying wax to maintain the shine of the car."
+      },
+      {
+        "id": "drying",
+        "icon": "Wind",
+        "title": "Over 90% drying coverage",
+        "description": "Greater coverage by moving and directing the drying device from the front of the car to the back."
+      },
+      {
+        "id": "weather-resistance",
+        "icon": "CloudSun",
+        "title": "Resistance to natural factors",
+        "description": "The machine was designed to resist the natural factors in our geographical area, so it can hold up to the high levels of dust, humidity, and salinity, ensuring the best possible quality and performance in the local environmental conditions. Only stainless steel material is used at friction points."
+      },
+      {
+        "id": "capacity",
+        "icon": "Timer",
+        "title": "Up to 3.5 minutes per vehicle",
+        "description": "It is important to take care of the site design to ensure the best productivity — our team can help you plan the ideal setup."
+      }
+    ]
+  },
+  "advanced": {
+    "heading": "Smart Technology, Built In",
+    "subheading": "Every Rollover Machine ships with the same connected, self-monitoring technology stack.",
+    "items": [
+      {
+        "id": "failsafe",
+        "icon": "ShieldAlert",
+        "title": "Failsafe",
+        "description": "This technology ensures the highest level of safety by stopping the machine completely or partially in case of a malfunction, then displaying all direct problems immediately."
+      },
+      {
+        "id": "auto-tuning",
+        "icon": "Settings2",
+        "title": "Auto Tuning technology",
+        "description": "It enables the machine to automatically re-tune the parameters after every washing process without human intervention."
+      },
+      {
+        "id": "wifi-control",
+        "icon": "Wifi",
+        "title": "Wireless control (Wi-Fi)",
+        "description": "The machine system can be accessed using any electronic device (mobile or tablet) at the site, and controlled wirelessly from any place covered by the Wi-Fi network."
+      },
+      {
+        "id": "smart-maintenance",
+        "icon": "Cpu",
+        "title": "Smart Maintenance (SM) system",
+        "description": "The machines are fully connected to WashThru's systems to increase the levels of control, monitoring, and quality of maintenance operations."
+      },
+      {
+        "id": "spare-parts-online",
+        "icon": "PackageSearch",
+        "title": "Spare parts, online",
+        "description": "The central system accesses the machines and suggests the spare parts to be replaced in case of malfunction or depreciation, so the partner can order the parts directly without contacting the company or searching the website."
+      },
+      {
+        "id": "lifespan-calculator",
+        "icon": "GaugeCircle",
+        "title": "Wearable part lifespan calculator",
+        "description": "Displays the lifespan of the wearable parts of the machines and launches alerts when their lifespan limit approaches, so the partner can order and store parts in advance and replace them on time."
+      }
+    ]
+  },
+  "useCase": {
+    "heading": "Built for Limited-Size Sites",
+    "description": "The Rollover Machine's compact footprint and outdoor-ready design make it the natural fit for showrooms, fuel stations, and standalone sites where space is at a premium but performance still can't be compromised.",
+    "imageAlt": "A vehicle entering a WashThru automatic car wash machine"
+  },
+  "relatedProduct": {
+    "heading": "Need higher throughput instead?",
+    "description": "For busy, medium and large facilities that need to wash vehicles back-to-back, the Tunnel Machine keeps the line moving.",
+    "cta": "Explore the Tunnel Machine"
+  }
+}

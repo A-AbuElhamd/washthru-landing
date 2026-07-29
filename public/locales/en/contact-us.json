@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "title": "Request Automatic Car Wash Quotation | Contact Us",
+    "description": "Request an automatic car wash quotation, get machine pricing, and contact a reliable car wash equipment supplier today."
+  },
+  "page": {
+    "title": "Contact Us",
+    "intro": "For every entity looking for smart and highly productive solutions in the car wash sector, we look forward to working with you and to being success partners in your projects. We're also pleased to hear from you at WashThru through the following channels:",
+    "imageAlt": "Illustration representing WashThru's customer contact channels"
+  },
+  "info": {
+    "phoneLabel": "Phone",
+    "whatsappLabel": "WhatsApp",
+    "emailLabel": "Email",
+    "hoursLabel": "Working Hours",
+    "hoursValue": "Saturday to Thursday, 10 AM – 5 PM",
+    "locationLabel": "Location",
+    "locationValue": "Jeddah - Kingdom of Saudi Arabia"
+  },
+  "form": {
+    "heading": "Get in Touch",
+    "requestType": "Request Type",
+    "requestTypeOptions": {
+      "inquiry": "Inquiry",
+      "complaint": "Complaint",
+      "consultation": "Consultation Request",
+      "purchase": "Purchase Request",
+      "maintenance": "Maintenance Contract"
+    },
+    "name": "Name",
+    "namePlaceholder": "Your full name",
+    "city": "City",
+    "cityPlaceholder": "Your city",
+    "phone": "Mobile Number",
+    "phonePlaceholder": "05xxxxxxxx",
+    "email": "Email",
+    "emailPlaceholder": "you@example.com",
+    "hasCarWashLabel": "Do you already have a car wash?",
+    "hasCarWashYes": "Yes",
+    "hasCarWashNo": "No",
+    "message": "Message",
+    "messageOptional": "(optional)",
+    "messagePlaceholder": "Tell us about your project or question",
+    "submit": "Send Message",
+    "success": "Thank you! Your message has been received."
+  },
+  "map": {
+    "heading": "Visit Us",
+    "iframeTitle": "Map showing WashThru's location in Jeddah, Saudi Arabia"
+  }
+}

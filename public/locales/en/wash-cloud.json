@@ -1,0 +1,77 @@
+{
+  "meta": {
+    "title": "Wash Cloud — Smart Cloud Management System | WashThru",
+    "description": "Explore Wash Cloud, WashThru's cloud platform for automatic car wash machines — predictive maintenance, automatic alerts, remote control, and more."
+  },
+  "hero": {
+    "eyebrow": "Cloud-Connected Car Wash Management",
+    "title": "Wash Cloud System",
+"intro": "It is a \"cloud service\" provided by WashThru on an optional basis. This service works by allowing our central servers to access your machine, unlocking several additional unique features once you have an active Wash Cloud license.",
+    "imageAlt": "Abstract illustration representing the Wash Cloud platform"
+  },
+  "features": {
+    "heading": "What Wash Cloud Unlocks",
+    "subheading": "Once your machine is connected, these capabilities come standard.",
+    "items": [
+      {
+        "id": "preventive-maintenance",
+        "icon": "Gauge",
+        "title": "Predictive maintenance for non-wearable parts",
+        "description": "Onboard AI reads performance data from the machine's non-wearable components and estimates their remaining lifespan using historical records plus local conditions such as region, temperature, humidity, and water salinity — so our remote maintenance team knows exactly which parts need attention before they fail."
+      },
+      {
+        "id": "auto-alerts",
+        "icon": "Bell",
+        "title": "Automatic SMS alerts",
+        "description": "The platform texts you the moment it detects a fault or notices a part approaching the end of its service life, so nothing catches your team off guard."
+      },
+      {
+        "id": "continuous-updates",
+        "icon": "RefreshCw",
+        "title": "Continuous system updates",
+        "description": "Our R&D team rolls out ongoing updates to the machine's control software, steadily raising security, performance, and quality without any action needed on your end."
+      },
+      {
+        "id": "auto-assistant",
+        "icon": "Bot",
+        "title": "Smart auto-assistant",
+        "description": "When an issue isn't immediately recognizable, this AI assistant runs through the likely causes in seconds and produces a full diagnostic report, so you can understand what's wrong without a site visit."
+      },
+      {
+        "id": "guided-repairs",
+        "icon": "Video",
+        "title": "Guided repair walkthroughs",
+        "description": "When a technician does need to step in, the system plays instructional videos showing the required spare part and the correct repair procedure, step by step."
+      },
+      {
+        "id": "api-integration",
+        "icon": "Plug",
+        "title": "API integration",
+        "description": "Partners running their own software, apps, or ERP systems can connect them directly to the machine for a modest customization fee — no extra hardware required."
+      },
+      {
+        "id": "cloud-storage",
+        "icon": "Database",
+        "title": "Secure cloud storage",
+        "description": "Every machine's historical data is stored in the cloud and stays available for review anytime, from anywhere, with no risk of loss."
+      },
+      {
+        "id": "auto-reporting",
+        "icon": "Send",
+        "title": "Automatic fault reporting",
+        "description": "Malfunctions are reported to our maintenance team on their own, with no manual submission required, and handled according to severity."
+      },
+      {
+        "id": "remote-control",
+        "icon": "MonitorSmartphone",
+        "title": "Remote access & control",
+        "description": "Reach the machine's core and advanced features from a phone or tablet, anywhere in the world, at any time — with the same high security standards as an on-site visit."
+      }
+    ]
+  },
+  "cta": {
+    "heading": "Ready to make the switch to Wash Cloud?",
+    "subheading": "Talk to our team to learn how Wash Cloud can be added to your machine.",
+    "button": "Contact Us"
+  }
+}

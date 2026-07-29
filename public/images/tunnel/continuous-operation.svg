@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="700" viewBox="0 0 1000 700">
+  <defs>
+    <linearGradient id="g-tun-continuous" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0C2ED8"/>
+      <stop offset="100%" stop-color="#081F94"/>
+    </linearGradient>
+  </defs>
+  <rect width="1000" height="700" fill="url(#g-tun-continuous)"/>
+  <g transform="translate(330 330) scale(1.6)" opacity="0.9">
+    <path d="M0,-38 C22,-8 34,10 34,26 C34,48 18,62 0,62 C-18,62 -34,48 -34,26 C-34,10 -22,-8 0,-38 Z" fill="#ffffff"/>
+  </g>
+  <g transform="translate(500 330) scale(1.6)" opacity="0.6">
+    <path d="M0,-38 C22,-8 34,10 34,26 C34,48 18,62 0,62 C-18,62 -34,48 -34,26 C-34,10 -22,-8 0,-38 Z" fill="#ffffff"/>
+  </g>
+  <g transform="translate(670 330) scale(1.6)" opacity="0.3">
+    <path d="M0,-38 C22,-8 34,10 34,26 C34,48 18,62 0,62 C-18,62 -34,48 -34,26 C-34,10 -22,-8 0,-38 Z" fill="#ffffff"/>
+  </g>
+  <path d="M760,330 h130" stroke="#ffffff" stroke-width="6" stroke-linecap="round" opacity="0.5" marker-end="url(#arrow)"/>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="6" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#ffffff" opacity="0.5"/>
+    </marker>
+  </defs>
+  <text x="500" y="600" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="30" font-weight="700" fill="#ffffff" opacity="0.95">Placeholder</text>
+  <text x="500" y="634" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="18" fill="#ffffff" opacity="0.7">Continuous sequential wash line</text>
+</svg>

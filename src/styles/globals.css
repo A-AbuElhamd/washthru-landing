@@ -1,0 +1,73 @@
+@import '../theme/tokens.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+ * Real production Arabic typeface: a self-hosted "Montserrat Arabic" TTF
+ * family (not a Google Font — Cairo was a stand-in before this was found),
+ * served from the real site's own asset CDN. Loaded as plain @font-face
+ * since next/font/local requires files bundled into the repo, not remote
+ * URLs; these are fetched directly from the authorized real CDN instead.
+ */
+@font-face {
+  font-family: 'Montserrat Arabic';
+  src: url('https://cdn.prod.website-files.com/63aad373fdf77ff7df65db58/63abda44da54a25114f4d376_Montserrat-Arabic-Light.ttf')
+    format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat Arabic';
+  src: url('https://cdn.prod.website-files.com/63aad373fdf77ff7df65db58/63abda45d827c57d913f80e4_Montserrat-Arabic-Regular.ttf')
+    format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat Arabic';
+  src: url('https://cdn.prod.website-files.com/63aad373fdf77ff7df65db58/63abda44da54a2b0c7f4d377_Montserrat-Arabic-Medium.ttf')
+    format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat Arabic';
+  src: url('https://cdn.prod.website-files.com/63aad373fdf77ff7df65db58/63abda44acaa433a344601a2_Montserrat-Arabic-Bold.ttf')
+    format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-bg text-fg antialiased transition-colors duration-200 font-sans;
+  }
+
+  ::selection {
+    @apply bg-brand/30 text-fg;
+  }
+
+  :focus-visible {
+    outline: 2px solid rgb(var(--color-brand));
+    outline-offset: 2px;
+  }
+}
+
+@layer utilities {
+  .sr-only-focusable {
+    @apply sr-only focus:not-sr-only focus:fixed focus:top-2 focus:start-2 focus:z-50 focus:rounded-md focus:bg-brand focus:px-4 focus:py-2 focus:text-white;
+  }
+}

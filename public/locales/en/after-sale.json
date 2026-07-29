@@ -1,0 +1,134 @@
+{
+  "meta": {
+    "title": "After-Sales Service & Support | WashThru",
+    "description": "See WashThru's after-sales commitments — warranty coverage, multilingual support, spare parts availability, and our Basic, Remote Maintenance, Wash Cloud, and Full service plans."
+  },
+  "hero": {
+    "eyebrow": "Support That Doesn't Stop at Delivery",
+    "title": "After-Sales Service & Support",
+    "intro": "From the day your machine is installed, WashThru stands behind it with warranty coverage, multilingual technical support, and a menu of service plans built around how you operate.",
+    "imageAlt": "Abstract illustration representing after-sales support"
+  },
+  "guarantees": {
+    "heading": "Our Commitments to You",
+    "subheading": "Five guarantees that come standard with every WashThru machine.",
+    "items": [
+      {
+        "id": "warranty",
+        "icon": "ShieldCheck",
+        "title": "2-year manufacturing warranty",
+        "description": "2 years warranty for the machine against all manufacturing defects and malfunctions (terms and conditions apply)."
+      },
+      {
+        "id": "multilingual-support",
+        "icon": "Languages",
+        "title": "Support in your language",
+        "description": "We guarantee that maintenance and technical support services are provided in multiple languages: English, Arabic, Urdu, and Filipino.",
+        "languages": ["Arabic", "English", "Urdu", "Filipino"]
+      },
+      {
+        "id": "training",
+        "icon": "GraduationCap",
+        "title": "Hands-on operator training",
+        "description": "We guarantee that the required training is provided to partners on how to operate and periodically maintain the machines, through our Comprehensive Training Department."
+      },
+      {
+        "id": "spare-parts",
+        "icon": "PackageCheck",
+        "title": "Spare parts always in stock",
+        "description": "We guarantee that all main and consumable spare parts are always provided and made available."
+      },
+      {
+        "id": "cost-transparency",
+        "icon": "Calculator",
+        "title": "Transparent cost planning",
+        "description": "We guarantee our maximum cost calculation per vehicle. With our leading expertise in the car wash industry, we calculate expenses and depreciation by estimating the lifespan of each part, with an optional depreciation study per vehicle."
+      }
+    ]
+  },
+  "plans": {
+    "heading": "After-Sales Service Plans",
+    "subheading": "Choose the level of coverage that matches how you run your station.",
+    "note": "*Terms and conditions apply.",
+    "recommendedBadge": "Recommended",
+    "tiers": [
+      {
+        "id": "basic",
+        "name": "Basic Plan",
+        "price": "Free",
+        "priceNote": "Included with every machine, forever",
+        "tagline": null,
+        "features": [
+          "Remote technical support",
+          "Vehicle activity reports — counts, entry times, sizes, and invoices, reviewed remotely over Wi-Fi",
+          "Wearable-parts lifespan tracker with advance replacement alerts",
+          "Smart maintenance system — full history of replaced parts, invoices, tickets, and visit reviews",
+          "Online spare-parts ordering"
+        ],
+        "perks": [],
+        "bonus": null,
+        "badge": null,
+        "highlighted": false
+      },
+      {
+        "id": "remote-maintenance",
+        "name": "Remote Maintenance Plan",
+        "price": "200 SAR / month",
+        "priceNote": "or 2,000 SAR billed annually",
+        "tagline": "Everything in the Basic Plan, plus:",
+        "features": [
+          "Unlimited access to our maintenance video library",
+          "Augmented-reality video-call support",
+          "Dedicated remote support sessions"
+        ],
+        "perks": ["10% off maintenance visit fees", "5% off spare parts", "25% off additional services"],
+        "bonus": "Includes 2 extra years of coverage at no charge",
+        "badge": null,
+        "highlighted": false
+      },
+      {
+        "id": "wash-cloud",
+        "name": "Wash Cloud Plan",
+        "price": "400 SAR / month",
+        "priceNote": "or 4,000 SAR billed annually (down from 800 / 8,000 SAR)",
+        "tagline": "Everything in Remote Maintenance, plus full Wash Cloud access:",
+        "features": [
+          "Smart auto-assistant for instant fault diagnosis",
+          "Continuous system updates",
+          "Guided video repair walkthroughs",
+          "Predictive maintenance for non-wearable parts",
+          "API integration for your own ERP or software",
+          "Automatic fault reporting",
+          "Remote access & control",
+          "Secure cloud storage",
+          "Automatic SMS alerts"
+        ],
+        "perks": ["20% off maintenance visit fees", "10% off spare parts", "50% off additional services"],
+        "bonus": "Includes 1 extra year of coverage at no charge",
+        "badge": "Recommended",
+        "highlighted": true
+      },
+      {
+        "id": "full",
+        "name": "Full Plan",
+        "price": "Contact us",
+        "priceNote": "Custom pricing based on your station",
+        "tagline": "Everything in the Wash Cloud Plan, plus:",
+        "features": [
+          "Frequent scheduled maintenance visits from our technicians",
+          "Option to extend your warranty up to 5 years",
+          "A free training course for your team"
+        ],
+        "perks": ["50% off maintenance visit fees", "20% off spare parts", "Additional services included at no extra cost"],
+        "bonus": "Includes 6 months of coverage at no charge",
+        "badge": null,
+        "highlighted": false
+      }
+    ]
+  },
+  "cta": {
+    "heading": "Have questions about coverage?",
+    "subheading": "Our team can help you pick the right after-sales plan for your station.",
+    "button": "Contact Us"
+  }
+}

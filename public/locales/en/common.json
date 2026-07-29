@@ -1,0 +1,72 @@
+{
+  "header": {
+    "callUs": "Call us",
+    "whatsapp": "Contact us on WhatsApp"
+  },
+  "nav": {
+    "whoWeAre": "Who We Are",
+    "ourProducts": "Our Products",
+    "services": "Services",
+    "washCloud": "WashCloud",
+    "afterSale": "After-Sale",
+    "contactUs": "Contact Us",
+    "knowledgeLibrary": "Knowledge Library",
+    "blueprints": "Blueprints",
+    "blog": "Blog",
+    "agentLogin": "Agent Login",
+    "primaryLabel": "Primary navigation",
+    "openMenu": "Open menu",
+    "more": "More"
+  },
+  "site": {
+    "name": "WashThru"
+  },
+  "actions": {
+    "getQuote": "Get a Quote",
+    "learnMore": "Learn More",
+    "submit": "Submit"
+  },
+  "meta": {
+    "defaultTitle": "WashThru | Automatic Car Wash Machine Manufacturer",
+    "defaultDescription": "WashThru designs and manufactures automatic car wash machines and touchless car wash systems for businesses across Saudi Arabia and beyond."
+  },
+  "footer": {
+    "tagline": "Engineering automatic and touchless car wash systems, built and supported across Saudi Arabia.",
+    "navLabel": "Footer navigation",
+    "contact": "Contact",
+    "follow": "Follow us",
+    "copyright": "© {{year}} {{siteName}}. All rights reserved.",
+    "partOfMechatronics": "Part of the Mechatronics Group",
+    "certificationBadgeAlt": "WashThru quality certification badge",
+    "mechatronicsLogoAlt": "Mechatronics Group logo"
+  },
+  "language": {
+    "switch": "العربية"
+  },
+  "theme": {
+    "switchToLight": "Switch to light mode",
+    "switchToDark": "Switch to dark mode"
+  },
+  "carousel": {
+    "pause": "Pause carousel",
+    "play": "Play carousel",
+    "previous": "Previous slide",
+    "next": "Next slide"
+  },
+  "breadcrumbs": {
+    "home": "Home",
+    "blog": "Blog",
+    "blueprints": "Blueprints",
+    "label": "Breadcrumb"
+  },
+  "a11y": {
+    "skipToContent": "Skip to main content"
+  },
+  "errors": {
+    "notFoundTitle": "Page Not Found",
+    "notFoundDescription": "The page you're looking for doesn't exist or may have been moved.",
+    "serverErrorTitle": "Something Went Wrong",
+    "serverErrorDescription": "An unexpected error occurred on our end. Please try again in a moment.",
+    "backHome": "Back to Home"
+  }
+}

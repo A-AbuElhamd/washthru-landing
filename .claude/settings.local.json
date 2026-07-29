@@ -1,0 +1,38 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node -e ' *)",
+      "Bash(mkdir -p /c/Users/ASUS/AppData/Local/Temp/claude/W--ai-apps/56c51808-ecdd-42ab-85d2-3f2c213e1494/scratchpad *)",
+      "Bash(python3 -c ' *)",
+      "Bash(npm install *)",
+      "Bash(npx tsc *)",
+      "Bash(npm run *)",
+      "Bash(node scripts/check-i18n-keys.js)",
+      "Bash(curl -s -o /tmp/wash-thru.css -w \"%{http_code} %{size_download} bytes\\\\n\" \"https://cdn.prod.website-files.com/63aad373fdf77ff7df65db58/css/wash-thru.webflow.shared.e5e994ee0.css\" --max-time 20)",
+      "Bash(curl -s -o \"/c/Users/ASUS/AppData/Local/Temp/claude/W--ai-apps/56c51808-ecdd-42ab-85d2-3f2c213e1494/scratchpad/real-assets/wash-thru.webflow.css\" -w \"%{http_code} %{size_download} bytes\\\\n\" \"https://cdn.prod.website-files.com/63aad373fdf77ff7df65db58/css/wash-thru.webflow.shared.e5e994ee0.css\" --max-time 20)",
+      "Bash(curl -s -m 15 \"https://cdn.prod.website-files.com/63aad373fdf77ff7df65db58/63d1184232a91d31b218c630_WashThru_logo_01.svg\")",
+      "Bash(curl -s -m 15 \"https://cdn.prod.website-files.com/63aad373fdf77ff7df65db58/63d4f35d0411b63702aacff0_certi-02.svg\")",
+      "Bash(curl -s -m 15 \"https://cdn.prod.website-files.com/63aad373fdf77ff7df65db58/63d4f35d0411b63702aacff0_certi-02.svg\" -o /tmp/certi02.svg)",
+      "Bash(curl -s -m 15 \"https://cdn.prod.website-files.com/63aad373fdf77ff7df65db58/63d4f3681c71e0043ee8dc97_certi-01.svg\")",
+      "Bash(curl -s -m 15 \"https://cdn.prod.website-files.com/63aad373fdf77ff7df65db58/63d147361f56b43906bacef6_Mechatronics_logo.svg\")",
+      "Bash(echo \"EXIT_CODE=$?\")",
+      "Bash(echo \"TSC_EXIT=$?\")",
+      "Bash(echo \"I18N_EXIT=$?\")",
+      "Bash(ffmpeg -version)",
+      "Bash(python -c \"import cv2; print\\('cv2 ok', cv2.__version__\\)\")",
+      "Bash(python -c \"import moviepy; print\\('moviepy ok'\\)\")",
+      "Bash(where ffmpeg *)",
+      "Bash(powershell -c \"Get-Command ffmpeg\")",
+      "Bash(echo \"=== @font-face rules ===\")",
+      "Bash(grep -n @font-face /c/Users/ASUS/AppData/Local/Temp/claude/W--ai-apps/56c51808-ecdd-42ab-85d2-3f2c213e1494/scratchpad/real-assets/wash-thru.webflow.css)",
+      "Bash(echo \"---2040-2080---\")",
+      "Bash(echo \"EXIT: $?\")",
+      "Bash(xargs grep -o 'Montserrat-Arabic-[A-Za-z]*\\\\.ttf')",
+      "Bash(echo \"TSC EXIT: $?\")",
+      "Bash(powershell -NoProfile -Command \"Get-CimInstance Win32_Process -Filter \\\\\"Name='node.exe'\\\\\" | Select-Object ProcessId, CommandLine | Format-List\")",
+      "Bash(powershell -NoProfile -Command \"Stop-Process -Id 21704,25620,36528,36720 -Force -ErrorAction SilentlyContinue; Start-Sleep -Seconds 1; Get-CimInstance Win32_Process -Filter \\\\\"Name='node.exe'\\\\\" | Select-Object ProcessId, CommandLine\")",
+      "Bash(grep -n '\\\\.hide\\\\b' /c/Users/ASUS/AppData/Local/Temp/claude/W--ai-apps/56c51808-ecdd-42ab-85d2-3f2c213e1494/scratchpad/real-assets/wash-thru.webflow.css)",
+      "Bash(echo \"---wwr_video_wrap.hide---\")"
+    ]
+  }
+}

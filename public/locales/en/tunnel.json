@@ -1,0 +1,131 @@
+{
+  "meta": {
+    "title": "Automatic Tunnel Car Wash Systems | High-Capacity Machines",
+    "description": "Automatic tunnel car wash systems for medium and large facilities, with continuous operation and fast throughput of up to 1.5 minutes per vehicle."
+  },
+  "breadcrumbLabel": "Tunnel Machine",
+  "hero": {
+    "eyebrow": "Tunnel System",
+    "title": "Tunnel Machine",
+    "intro": "Built for medium and large facilities, the Tunnel Machine washes vehicles sequentially without interruption, moving a vehicle through the full cycle in as little as 1.5 minutes.",
+    "imageAlt": "Illustration of the WashThru Tunnel automatic car wash machine",
+    "customerService": "Customer Service",
+    "badges": [
+      { "id": "saudiMade", "label": "Saudi made" },
+      { "id": "productionSpeed", "label": "Higher production speed" },
+      { "id": "partsWarranty", "label": "Warranty on parts" }
+    ]
+  },
+  "features": {
+    "heading": "How the Tunnel Machine Works",
+    "subheading": "A continuous wash line engineered to keep multiple vehicles moving without slowing down.",
+    "items": [
+      {
+        "id": "sequential-operation",
+        "icon": "ArrowLeftRight",
+        "title": "Continuous, sequential operation",
+        "description": "Processes more than one vehicle at a time, with no pause between wash cycles."
+      },
+      {
+        "id": "smart-sensors",
+        "icon": "ScanEye",
+        "title": "Smart Sensors (IPS)",
+        "description": "Reads each vehicle's dimensions automatically so the wash sequence adapts for optimal coverage and performance."
+      },
+      {
+        "id": "pre-wash",
+        "icon": "SprayCan",
+        "title": "Pre-wash spray, touchless mode, and crystal foam",
+        "description": "A pre-wash spray loosens dirt, an optional touchless mode speeds up lightly soiled vehicles, and a crystal foam spray covers the entire vehicle."
+      },
+      {
+        "id": "brush-pressure",
+        "icon": "Hand",
+        "title": "Touch-based brush pressure analysis",
+        "description": "Brushes continuously analyze contact to apply the ideal pressure across every panel of the vehicle."
+      },
+      {
+        "id": "micro-foam-brushes",
+        "icon": "Sparkles",
+        "title": "Ultra-soft micro-foam brushes",
+        "description": "Highly effective at lifting dirt without holding onto grit, paired with an automatic brush-cleaning cycle that keeps every pass safe for the paint."
+      },
+      {
+        "id": "rinse-wax",
+        "icon": "Waves",
+        "title": "Foam rinse and wax finish",
+        "description": "A thorough rinse clears remaining foam, followed by a wax spray that helps maintain the vehicle's shine."
+      },
+      {
+        "id": "drying",
+        "icon": "Wind",
+        "title": "Over 90% drying coverage",
+        "description": "Additional drying brushes can be installed, and the line is designed to support water-recycling equipment."
+      },
+      {
+        "id": "weather-resistance",
+        "icon": "CloudSun",
+        "title": "Resistance to natural factors",
+        "description": "Stainless steel is used at every friction point so the machine holds up to dust, humidity, and salinity in the local environment."
+      },
+      {
+        "id": "capacity",
+        "icon": "Timer",
+        "title": "Up to 1.5 minutes per vehicle",
+        "description": "Continuous operation and a longer wash line let the Tunnel Machine sustain a higher throughput than single-bay systems."
+      }
+    ]
+  },
+  "advanced": {
+    "heading": "Smart Technology, Built In",
+    "subheading": "Every Tunnel Machine ships with the same connected, self-monitoring technology stack.",
+    "items": [
+      {
+        "id": "failsafe",
+        "icon": "ShieldAlert",
+        "title": "Failsafe protection",
+        "description": "Automatically stops the machine partially or fully at the first sign of a fault and reports the issue immediately."
+      },
+      {
+        "id": "auto-tuning",
+        "icon": "Settings2",
+        "title": "Auto Tuning technology",
+        "description": "Re-tunes its own operating parameters after every wash cycle, with no manual intervention required."
+      },
+      {
+        "id": "api-technology",
+        "icon": "Layers",
+        "title": "API technology",
+        "description": "A supplemental service for partners running their own software, apps, or ERP systems who want to connect them directly to the machine, at a nominal fee and with no extra hardware required."
+      },
+      {
+        "id": "smart-maintenance",
+        "icon": "Cpu",
+        "title": "Smart Maintenance (SM) system",
+        "description": "Fully connected to WashThru's systems to raise the level of control, monitoring, and maintenance quality."
+      },
+      {
+        "id": "preventive-maintenance-ai",
+        "icon": "RefreshCw",
+        "title": "Preventive Maintenance (AI) technology",
+        "description": "Continuously monitors every part of the machine and estimates its remaining lifespan, giving partners an early warning before a part nears the end of its service life."
+      },
+      {
+        "id": "lifespan-calculator",
+        "icon": "GaugeCircle",
+        "title": "Wearable part lifespan calculator",
+        "description": "Tracks the remaining lifespan of wearable parts and alerts partners in advance, so replacements happen on schedule."
+      }
+    ]
+  },
+  "useCase": {
+    "heading": "Built for Medium and Large Sites",
+    "description": "The Tunnel Machine's continuous line is the right fit for busy car wash operators, dealership groups, and high-traffic sites that need to process vehicles back-to-back without ever slowing the queue.",
+    "imageAlt": "Illustration of vehicles moving through a continuous tunnel wash line"
+  },
+  "relatedProduct": {
+    "heading": "Working with a smaller footprint?",
+    "description": "For sites with limited space, the Rollover Machine delivers the same wash quality in a compact, outdoor-ready unit.",
+    "cta": "Explore the Rollover Machine"
+  }
+}

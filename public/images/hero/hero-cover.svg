@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="g-c7qevy" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#081F94"/>
+      <stop offset="100%" stop-color="#0C2ED8"/>
+    </linearGradient>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#g-c7qevy)"/>
+  
+    <g transform="translate(960 510) scale(4.153846153846154)" opacity="0.92">
+      <path d="M0,-38 C22,-8 34,10 34,26 C34,48 18,62 0,62 C-18,62 -34,48 -34,26 C-34,10 -22,-8 0,-38 Z" fill="#ffffff"/>
+      <path d="M-46,-4 A46,46 0 0 1 46,-4" stroke="#ffffff" stroke-width="6" fill="none" stroke-linecap="round" opacity="0.55"/>
+      <path d="M-58,-18 A58,58 0 0 1 58,-18" stroke="#ffffff" stroke-width="5" fill="none" stroke-linecap="round" opacity="0.3"/>
+    </g>
+  <text x="960" y="1006" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="56.470588235294116" font-weight="700" fill="#ffffff" opacity="0.95">Placeholder — Hero Image</text>
+  <text x="960" y="1040" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="27.428571428571427" fill="#ffffff" opacity="0.7">Replace with real installation photography before launch</text>
+</svg>

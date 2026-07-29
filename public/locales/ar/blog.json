@@ -1,0 +1,22 @@
+{
+  "index": {
+    "heading": "مدونة واش ثرو",
+    "subtitle": "مقالات حول تقنية غسيل السيارات الأوتوماتيكي، ودراسات الجدوى، وأحدث اتجاهات القطاع من فريق واش ثرو."
+  },
+  "post": {
+    "author": "بقلم",
+    "publishedOn": "نُشر في",
+    "readingTime_zero": "أقل من دقيقة قراءة",
+    "readingTime_one": "دقيقة واحدة للقراءة",
+    "readingTime_two": "دقيقتان للقراءة",
+    "readingTime_few": "{{count}} دقائق للقراءة",
+    "readingTime_many": "{{count}} دقيقة للقراءة",
+    "readingTime_other": "{{count}} دقيقة للقراءة",
+    "relatedHeading": "مقالات ذات صلة",
+    "backToBlog": "العودة إلى المدونة",
+    "shareHeading": "مشاركة:",
+    "shareWhatsapp": "مشاركة عبر واتساب",
+    "shareX": "مشاركة عبر X",
+    "shareFacebook": "مشاركة عبر فيسبوك"
+  }
+}

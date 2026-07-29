@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="g-op-tunnel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#081F94"/>
+      <stop offset="100%" stop-color="#0C2ED8"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#g-op-tunnel)"/>
+  <g transform="translate(400 260)" opacity="0.92">
+    <rect x="-170" y="-40" width="340" height="80" rx="40" fill="none" stroke="#ffffff" stroke-width="8" opacity="0.55"/>
+    <path d="M0,-38 C22,-8 34,10 34,26 C34,48 18,62 0,62 C-18,62 -34,48 -34,26 C-34,10 -22,-8 0,-38 Z" fill="#ffffff" transform="scale(1.2)"/>
+  </g>
+  <text x="400" y="500" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="30" font-weight="700" fill="#ffffff" opacity="0.95">Placeholder</text>
+  <text x="400" y="534" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="18" fill="#ffffff" opacity="0.7">Tunnel Machine</text>
+</svg>

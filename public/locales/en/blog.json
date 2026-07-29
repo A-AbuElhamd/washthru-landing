@@ -1,0 +1,18 @@
+{
+  "index": {
+    "heading": "WashThru Blog",
+    "subtitle": "Insights on automatic car wash technology, business feasibility, and industry trends from the WashThru team."
+  },
+  "post": {
+    "author": "Written by",
+    "publishedOn": "Published on",
+    "readingTime_one": "{{count}} min read",
+    "readingTime_other": "{{count}} min read",
+    "relatedHeading": "Related Articles",
+    "backToBlog": "Back to Blog",
+    "shareHeading": "Share:",
+    "shareWhatsapp": "Share via WhatsApp",
+    "shareX": "Share via X",
+    "shareFacebook": "Share via Facebook"
+  }
+}

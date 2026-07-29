@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "title": "WashThru | Automatic Car Wash Machines Made in Saudi Arabia",
+    "description": "WashThru engineers and manufactures automatic and touchless car wash machines, offering full turnkey solutions from design to after-sale support across Saudi Arabia."
+  },
+  "hero": {
+    "title": {
+      "line1Plain": "Higher",
+      "line1Accent": "Quality",
+      "line2Plain": "Higher",
+      "line2Accent": "Productivity",
+      "line3Plain": "Lower",
+      "line3Accent": "Effort"
+    },
+    "imageAlt": "3D-rendered white SUV inside a car wash machine with brushes and frame structure",
+    "stats": {
+      "liveBadge": "Live",
+      "carsWashedLabel": "The number of cars that have been washed in our machines till now",
+      "updateNote": "The modern machine models update live, while the older models are updated on a monthly/quarterly basis."
+    }
+  },
+  "whoWeAre": {
+    "heading": "Who We Are",
+    "intro": "Due to the car wash industry's need for development in terms of improving quality and productivity, WashThru was launched to provide smart solutions that help promote the industry's development, increase service quality, and reduce manpower — thus contributing to boosting profits, opening up new car wash investment opportunities, and fostering industry growth.",
+    "missionHeading": "Mission",
+    "missionText": "We seek to provide high-quality automated car wash solutions that rely on state-of-the-art AI and IoT technologies, and to export Saudi technology to global markets.",
+    "cta": "More Info",
+    "videoTitle": "Middle East Mechatronics introductory video"
+  },
+  "features": {
+    "heading": "Why Businesses Choose WashThru",
+    "subheading": "Every machine we build is engineered locally, tested rigorously, and backed by a nationwide support network."
+  },
+  "services": {
+    "heading": "Our Services",
+    "subheading": "From site planning to installation and long-term maintenance, WashThru supports you at every stage."
+  },
+  "testimonials": {
+    "heading": "Our partners' opinions",
+    "ratingLabel": "5 out of 5 stars"
+  },
+  "productHighlights": {
+    "rollover": {
+      "title": [
+        { "text": "Rollover", "accent": true },
+        { "text": "Machine", "accent": false }
+      ],
+      "description": "We have designed the Rollover Machine to serve facilities of limited sizes. Thanks to its unique and natural factor-resistant design, this product has the ability to be placed outdoors without affecting performance or quality, with a capacity up to 3.5 minutes per vehicle.",
+      "cta": "View Product"
+    },
+    "tunnel": {
+      "title": [
+        { "text": "Tunnel", "accent": true },
+        { "text": "Machine", "accent": false }
+      ],
+      "description": "We have designed the Tunnel Machine to serve large and medium facilities, as it can wash vehicles sequentially without interruption. As a result, its capacity is up to 1.5 minutes per vehicle.",
+      "cta": "View Product"
+    }
+  },
+  "partners": {
+    "heading": "Success Partners",
+    "badgeAlt": "WashThru partner identity badge",
+    "distributors": {
+      "heading": "Distributors within the Kingdom"
+    },
+    "agents": {
+      "heading": "Agents outside the Kingdom"
+    }
+  },
+  "contact": {
+    "heading": "Get in Touch",
+    "subheading": "Tell us about your project and our team will get back to you with a tailored recommendation.",
+    "info": {
+      "phoneLabel": "Call us",
+      "whatsappLabel": "WhatsApp",
+      "emailLabel": "Email us"
+    },
+    "form": {
+      "name": "Full Name",
+      "namePlaceholder": "Your full name",
+      "email": "Email Address",
+      "emailPlaceholder": "you@example.com",
+      "phone": "Phone Number",
+      "phonePlaceholder": "05XXXXXXXX",
+      "message": "Your Message",
+      "messagePlaceholder": "Tell us about your project...",
+      "submit": "Send Message",
+      "success": "Thanks — we've received your message and will be in touch shortly."
+    }
+  }
+}

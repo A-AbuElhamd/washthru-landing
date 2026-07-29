@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="as-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#081F94"/>
+      <stop offset="100%" stop-color="#0C2ED8"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#as-bg)"/>
+
+  <!-- shield mark representing warranty / support -->
+  <g transform="translate(600 360)" opacity="0.95">
+    <path d="M0,-140 L120,-96 C120,-10 90,80 0,140 C-90,80 -120,-10 -120,-96 Z" fill="#ffffff" opacity="0.16"/>
+    <path d="M0,-108 L92,-72 C92,-4 68,64 0,112 C-68,64 -92,-4 -92,-72 Z" fill="#ffffff"/>
+  </g>
+
+  <!-- checkmark inside shield -->
+  <g transform="translate(600 360)" stroke="#0C2ED8" stroke-width="16" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M-40,0 L-10,32 L48,-40"/>
+  </g>
+
+  <!-- small spray/droplet accents -->
+  <g fill="#ffffff" opacity="0.55">
+    <circle cx="420" cy="220" r="10"/>
+    <circle cx="800" cy="250" r="7"/>
+    <circle cx="780" cy="480" r="9"/>
+    <circle cx="440" cy="500" r="6"/>
+  </g>
+
+  <text x="600" y="640" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="40" font-weight="700" fill="#ffffff" opacity="0.95">Placeholder — After-Sales Illustration</text>
+  <text x="600" y="676" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="20" fill="#ffffff" opacity="0.7">Replace with real product artwork before launch</text>
+</svg>

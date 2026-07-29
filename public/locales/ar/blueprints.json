@@ -1,0 +1,33 @@
+{
+  "index": {
+    "title": "المخططات",
+    "heading": "مخططات جاهزة",
+    "subtitle": "تصفّح مخططات جاهزة لتصميم مراكز خدمة ومحطات غسيل السيارات الأوتوماتيكية، لتساعدك على التخطيط لموقع منتج قبل البدء بالبناء.",
+    "cardAreaLabel": "المساحة",
+    "cardTypeLabel": "النوع",
+    "viewPlan": "عرض تفاصيل المخطط",
+    "serviceCenterHeading": "مخططات مراكز الخدمة",
+    "stationHeading": "مخططات محطات"
+  },
+  "detail": {
+    "backToBlueprints": "العودة إلى المخططات",
+    "planTypeLabel": "نوع المخطط",
+    "streetConfigLabel": "الوصول من الشارع",
+    "planNumberLabel": "رقم المخطط",
+    "areaLabel": "المساحة",
+    "areaUnit": "{{value}} متر مربع",
+    "dimensionsLabel": "القياس",
+    "dimensionsValue": "{{width}} × {{depth}} متر",
+    "modelHeading": "نموذج ثلاثي الأبعاد",
+    "modelPlaceholderTitle": "عنصر نائب لعارض النموذج ثلاثي الأبعاد",
+    "modelPlaceholderBody": "أضف هنا نموذج Sketchfab حقيقيًا لمعاينة هذا المخطط بشكل ثلاثي الأبعاد.",
+    "downloadHeading": "ملف المخطط PDF",
+    "downloadButton": "تحميل PDF",
+    "downloadButtonPlaceholder": "تحميل PDF (غير متاح)",
+    "downloadUnavailable": "تحميل ملف PDF غير متاح في هذه المعاينة.",
+    "shareHeading": "شارك هذا المخطط",
+    "shareWhatsapp": "مشاركة عبر واتساب",
+    "shareX": "مشاركة عبر X",
+    "shareFacebook": "مشاركة عبر فيسبوك"
+  }
+}
