@@ -57,7 +57,7 @@ export function Services() {
             renderItem={(service) => {
               const Icon = ICONS[service.icon];
               return (
-                <div className="h-full rounded-2xl h-[300px] border border-border bg-bg p-6">
+                <div className=" rounded-2xl h-[300px] border border-border bg-bg p-6">
                   <span className="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-brand/10 text-brand">
                     <Icon aria-hidden="true" className="h-6 w-6" />
                   </span>
