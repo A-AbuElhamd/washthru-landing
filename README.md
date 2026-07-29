@@ -1,4 +1,4 @@
-# WashThru Clone
+# WashThru landing page
 
 A bilingual (Arabic-default, English-secondary) Next.js clone of an automatic car wash machine manufacturer's marketing site, built as an engineering demonstration of production-grade i18n, theming, SEO, and accessibility patterns in the Next.js Pages Router.
 
