@@ -8,10 +8,12 @@
   --color-brand: 12 46 216;
   --color-brand-dark: 9 34 163;
   --color-accent: 255 176 32;
-  /* Real production "live" indicator coral (#ff741f, --coral in the source
-     site's compiled CSS) — used only for the hero's live-wash-counter pulse
-     badge, a fixed brand accent that doesn't theme-shift. Intentionally NOT
-     overridden under .dark below. */
+  /* Real production coral (#ff741f, `--coral` in the source site's compiled
+     CSS) — the site's fixed secondary-brand accent, reused verbatim across
+     several real components (the hero's live-wash-counter pulse badge, the
+     Wash Cloud page's intro banner and feature headings). A fixed brand
+     color that doesn't theme-shift. Intentionally NOT overridden under
+     .dark below. */
   --color-live: 255 116 31;
 
   /*
