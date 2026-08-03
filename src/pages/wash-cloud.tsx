@@ -6,19 +6,27 @@ import { Seo } from '@/components/shared/Seo';
 import { Header } from '@/components/shared/Header';
 import { Footer } from '@/components/shared/Footer';
 import { Container } from '@/components/shared/Container';
-import { SectionHeading } from '@/components/shared/SectionHeading';
-import { Breadcrumbs } from '@/components/shared/Breadcrumbs';
 import { Reveal } from '@/components/shared/Reveal';
-import { Button } from '@/components/shared/Button';
 import { webPageSchema, breadcrumbSchema } from '@/utils/schema';
 import { useLocale } from '@/hooks/useLocale';
+import { SITE } from '@/config/site';
 
 interface WashCloudFeature {
   id: string;
-  icon: string;
   title: string;
   description: string;
 }
+
+// Real `.wc_wrap_01` background photo, under a flat blue tint overlay.
+const HERO_BG_URL =
+  'https://cdn.prod.website-files.com/63aad373fdf77ff7df65db58/63fb1b3869b16e19b5e117c5_wash-cloud-bg.png';
+
+/**
+ * Real generic decorative line-pattern texture (`.wc-features-wrap`'s base
+ * `background-image`, shared verbatim across the whole real site) — shown
+ * behind each row on lg screens and up only, hidden below `lg`.
+ */
+const FEATURE_LINES_BG_URL = 'https://d3e54v103j8qbb.cloudfront.net/img/background-image.svg';
 
 /** Real per-feature icons, sourced from the production site's Wash Cloud page CDN assets. */
 const FEATURE_ICON_URLS: Record<string, string> = {
@@ -48,13 +56,7 @@ const WashCloudPage: NextPage = () => {
 
   const title = t('wash-cloud:meta.title');
   const description = t('wash-cloud:meta.description');
-  const heroTitle = t('wash-cloud:hero.title');
   const features = t('wash-cloud:features.items', { returnObjects: true }) as WashCloudFeature[];
-
-  const breadcrumbItems = [
-    { label: t('common:breadcrumbs.home'), path: '/' },
-    { label: t('common:nav.washCloud') },
-  ];
 
   return (
     <>
@@ -68,7 +70,7 @@ const WashCloudPage: NextPage = () => {
           breadcrumbSchema(
             [
               { name: t('common:breadcrumbs.home'), path: '/' },
-              { name: t('common:nav.washCloud'), path: '/wash-cloud' },
+              { name: t('wash-cloud:breadcrumbLabel'), path: '/wash-cloud' },
             ],
             locale
           ),
@@ -76,81 +78,86 @@ const WashCloudPage: NextPage = () => {
       />
       <Header />
       <main id="main-content">
-        <Container className="py-4">
-          <Breadcrumbs items={breadcrumbItems} />
-        </Container>
-
-        <section className="py-10 md:py-16">
-          <Container className="grid items-center gap-10 lg:grid-cols-2">
-            <Reveal>
-              <p className="text-sm font-semibold uppercase tracking-wide text-brand">
-                {t('wash-cloud:hero.eyebrow')}
-              </p>
-              <h1 className="mt-3 text-4xl font-bold leading-tight text-fg md:text-5xl">
-                {heroTitle}
+        {/* Real `.wc_hero_section` — solid blue background with a real bg
+            photo under a flat blue tint (not a gradient-to-transparent).
+            Real `min-height: 590px`. */}
+        <section className="relative isolate flex min-h-[590px] flex-col justify-center overflow-hidden bg-brand">
+          <div className="absolute inset-0 -z-10">
+            <Image src={HERO_BG_URL} alt="" fill sizes="100vw" className="object-cover" priority />
+            <div className="absolute inset-0 bg-brand/30" />
+          </div>
+          <Container className="py-10">
+            <Reveal className="text-start">
+              <h1 className="text-3xl font-medium leading-[1.5] text-white sm:text-4xl md:text-5xl lg:text-[48px]">
+                {t('wash-cloud:hero.titleLine1')}
+                <br />
+                {t('wash-cloud:hero.titleLine2')}
               </h1>
-              <p className="mt-4 max-w-xl text-lg text-fg-muted">{t('wash-cloud:hero.intro')}</p>
-            </Reveal>
-            <Reveal>
-              <Image
-                src="/images/wash-cloud/hero.svg"
-                alt={t('wash-cloud:hero.imageAlt')}
-                width={1200}
-                height={800}
-                className="h-auto w-full rounded-2xl"
-              />
+              <div className="mt-6 h-px w-24 bg-white/40" />
+              <p className="mt-16 text-base text-white/90 lg:text-[17px]">
+                {t('common:header.costomerServices')} / {SITE.contact.phone}
+              </p>
             </Reveal>
           </Container>
         </section>
 
-        <section aria-labelledby="wash-cloud-features-heading" className="py-12 md:py-20">
+        {/* Real `.wc_wrap_01._02` — a solid coral/orange banner holding only
+            the intro paragraph. */}
+        <section className="bg-live py-5 text-normal">
           <Container>
-            <SectionHeading
-              id="wash-cloud-features-heading"
-              as="h2"
-              title={t('wash-cloud:features.heading')}
-              subtitle={t('wash-cloud:features.subheading')}
-            />
-            <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-              {features.map((feature) => (
-                <Reveal key={feature.id}>
-                  <div className="h-full rounded-2xl border border-border bg-surface p-6">
-                    <span className="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-brand/10">
+            <p className="text-normal max-w-4xl text-lg font-medium leading-relaxed text-white lg:text-[25px]">
+              {t('wash-cloud:hero.intro')}
+            </p>
+          </Container>
+        </section>
+
+        {/* Real `.wc-features-section` — nine features stacked as an
+            alternating zigzag (icon/text sides swap every row), each with
+            one real large monoline icon. Not a card grid. */}
+        <section aria-labelledby="wash-cloud-features-heading" className="bg-[#f8f8f8] py-16 md:py-24">
+          <h2 id="wash-cloud-features-heading" className="sr-only">
+            {t('wash-cloud:breadcrumbLabel')}
+          </h2>
+          <Container className="flex flex-col">
+            {features.map((feature, index) => {
+              const isEven = index % 2 === 1;
+              const isLast = index === features.length - 1;
+              return (
+                <div key={feature.id}>
+                  <Reveal
+                    className={`flex flex-col items-center gap-10 py-14 sm:gap-12 sm:py-16 md:gap-20 md:py-16 lg:gap-24 lg:py-20 ${
+                      isEven ? 'md:flex-row-reverse' : 'md:flex-row'
+                    }`}
+                  >
+                    <div className="flex w-full shrink-0 items-center justify-center md:w-2/5">
                       <Image
                         src={FEATURE_ICON_URLS[feature.id]}
                         alt=""
                         aria-hidden="true"
-                        width={28}
-                        height={28}
-                        className="h-7 w-7 object-contain"
+                        width={220}
+                        height={220}
+                        unoptimized
+                        className="h-32 w-32 object-contain sm:h-44 sm:w-44 md:h-80 md:w-80"
                       />
-                    </span>
-                    <h3 className="mt-4 text-xl font-semibold text-fg">{feature.title}</h3>
-                    <p className="mt-2 text-base text-fg-muted">{feature.description}</p>
-                  </div>
-                </Reveal>
-              ))}
-            </div>
-          </Container>
-        </section>
-
-        <section className="py-12 md:py-20">
-          <Container>
-            <Reveal>
-              <div className="rounded-2xl bg-brand-dark px-6 py-12 text-center sm:px-12">
-                <h2 className="text-3xl font-bold text-white sm:text-4xl">
-                  {t('wash-cloud:cta.heading')}
-                </h2>
-                <p className="mx-auto mt-2 max-w-xl text-white/80">
-                  {t('wash-cloud:cta.subheading')}
-                </p>
-                <div className="mt-6">
-                  <Button href="/contact-us" variant="primary" size="lg">
-                    {t('wash-cloud:cta.button')}
-                  </Button>
+                    </div>
+                    <div className="relative w-full text-center md:w-3/5 md:text-start">
+                      <h3 className="text-xl font-medium leading-snug text-live sm:text-2xl lg:text-[28px]">
+                        {feature.title}
+                      </h3>
+                      <p className="mt-4 text-sm leading-relaxed text-fg-muted lg:text-[17px]">
+                        {feature.description}
+                      </p>
+                    </div>
+                  </Reveal>
+                  {/* Real site shows a divider between features on small
+                      screens only — desktop rows have enough vertical
+                      spacing on their own. */}
+                  {!isLast ? (
+                    <hr aria-hidden="true" className="border-t border-live/40 md:hidden" />
+                  ) : null}
                 </div>
-              </div>
-            </Reveal>
+              );
+            })}
           </Container>
         </section>
       </main>

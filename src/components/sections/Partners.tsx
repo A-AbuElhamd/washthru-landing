@@ -11,7 +11,7 @@ import {
 } from '@/data/partners';
 import { useLocale } from '@/hooks/useLocale';
 
-export function Partners() {
+export function Partners({ showDistributors = true }: { showDistributors?: boolean }) {
   const { t } = useTranslation('home');
   const resolvedLocale = useLocale();
 
@@ -28,7 +28,7 @@ export function Partners() {
           {t('partners.heading')}
         </h2>
 
-        <Reveal className="mt-10">
+     {/*    <Reveal className="mt-10">
           <ul className="flex flex-wrap items-center justify-center gap-x-8 gap-y-6">
             {partnerBadges.map((badge) => (
               <li key={badge.id} className="flex h-20 w-32 items-center justify-center">
@@ -42,20 +42,24 @@ export function Partners() {
               </li>
             ))}
           </ul>
-        </Reveal>
+        </Reveal> */}
 
         {/*
-          Real production client-logo marquee (`.marquee-track`), a second
-          real logo strip distinct from the static badge wall above. The real
-          site auto-scrolls it infinitely via CSS keyframes; this reuses the
-          shared Carousel's autoplay mode (with its built-in pause control)
-          instead of hand-rolled keyframes.
+          Real production client-logo marquee (`.marquee-track`) auto-scrolls
+          continuously via a CSS keyframe with NO stop control at all
+          (`animation: marquee-horizontal 35s linear infinite`, pausing only
+          on hover) — reproduced with the shared Carousel's autoplay mode,
+          matching the real 35s pace and suppressing the pause/play control
+          this project normally pairs with autoplay, since this is decorative
+          and the real site itself never offers a way to stop it.
         */}
         <Reveal className="mt-10">
           <Carousel
             items={clientLogos}
+            loop={true}
             slidesPerView={{ mobile: 2, tablet: 4, desktop: 6 }}
-            autoplayDelay={2500}
+            autoplayDelay={1000}
+            hideAutoplayControl
             renderItem={(logo) => (
               <div className="flex h-20 items-center justify-center grayscale transition hover:grayscale-0">
                 <Image
@@ -71,8 +75,8 @@ export function Partners() {
           />
         </Reveal>
 
+        {showDistributors ? (
         <div className="mt-16 grid gap-12 border-t border-border pt-12 lg:grid-cols-2">
-          <Reveal>
             {/*
               Real "الموزعون داخل المملكة" / "الوكلاء خارج المملكة" headings
               are their own full `.text-53px.mid` sections in production, not
@@ -80,6 +84,7 @@ export function Partners() {
               from the top-level heading since these are still visually
               subordinate to "شركاء النجاح" in this single merged section).
             */}
+          <Reveal>
             <h2 className="text-2xl font-medium text-fg sm:text-3xl md:text-4xl lg:text-[33px]">
               {t('partners.distributors.heading')}
             </h2>
@@ -127,6 +132,7 @@ export function Partners() {
             </ul>
           </Reveal>
         </div>
+        ) : null}
       </Container>
     </section>
   );

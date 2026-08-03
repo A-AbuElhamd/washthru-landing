@@ -71,3 +71,17 @@
     @apply sr-only focus:not-sr-only focus:fixed focus:top-2 focus:start-2 focus:z-50 focus:rounded-md focus:bg-brand focus:px-4 focus:py-2 focus:text-white;
   }
 }
+
+/* Real `.slide-nav` round pagination dots — brand-colored active state,
+   sized up from Swiper's 8px default to match the real ~13-16px dots. */
+.swiper-pagination-bullet {
+  background: rgb(var(--color-border));
+  opacity: 1;
+  width: 14px;
+  height: 14px;
+  margin: 0 5px !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: rgb(var(--color-brand));
+}

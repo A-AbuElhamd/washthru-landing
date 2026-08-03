@@ -1,19 +1,23 @@
+import { useRef, useState } from 'react';
 import type { GetStaticProps, NextPage } from 'next';
 import Image from 'next/image';
 import { serverSideTranslations } from 'next-i18next/pages/serverSideTranslations';
 import { useTranslation } from 'next-i18next/pages';
+import type { Swiper as SwiperInstance } from 'swiper/types';
 import { Seo } from '@/components/shared/Seo';
 import { Header } from '@/components/shared/Header';
 import { Footer } from '@/components/shared/Footer';
-import { Container } from '@/components/shared/Container';
-import { SectionHeading } from '@/components/shared/SectionHeading';
-import { Breadcrumbs } from '@/components/shared/Breadcrumbs';
-import { Reveal } from '@/components/shared/Reveal';
-import { Button } from '@/components/shared/Button';
+import { Carousel } from '@/components/shared/Carousel';
 import { JsonLd } from '@/components/shared/JsonLd';
 import { webPageSchema, breadcrumbSchema, servicesSchema } from '@/utils/schema';
 import { useLocale } from '@/hooks/useLocale';
 import { servicesDetail } from '@/data/servicesDetail';
+
+// Real `.right_arrow` / `.left_arrow` — the site's shared blue chevrons.
+const PREV_ARROW_ICON =
+  'https://cdn.prod.website-files.com/63aad373fdf77ff7df65db58/63d53835026df8042e0e6781_right-arrow-blue.svg';
+const NEXT_ARROW_ICON =
+  'https://cdn.prod.website-files.com/63aad373fdf77ff7df65db58/63d5385b52367707591972b8_left-arrow-blue.svg';
 
 const ServicesPage: NextPage = () => {
   const { t } = useTranslation(['common', 'services']);
@@ -22,6 +26,11 @@ const ServicesPage: NextPage = () => {
   const title = t('services:meta.title');
   const description = t('services:meta.description');
   const serviceNames = servicesDetail.map((service) => service.title[locale]);
+  const [activeIndex, setActiveIndex] = useState(0);
+  const swiperRef = useRef<SwiperInstance | null>(null);
+  const activeService =
+    servicesDetail[activeIndex] ??
+    servicesDetail[((activeIndex % servicesDetail.length) + servicesDetail.length) % servicesDetail.length];
 
   return (
     <>
@@ -44,126 +53,97 @@ const ServicesPage: NextPage = () => {
       <JsonLd data={servicesSchema(serviceNames, locale)} />
       <Header />
       <main id="main-content">
-        <Container className="py-4">
-          <Breadcrumbs
-            items={[
-              { label: t('common:breadcrumbs.home'), path: '/' },
-              { label: t('services:breadcrumbLabel') },
-            ]}
-          />
-        </Container>
+        <h1 className="sr-only">{t('services:breadcrumbLabel')}</h1>
 
-        {/* Hero */}
-        <section className="py-10 md:py-16">
-          <Container>
-            <Reveal>
-              <h1 className="max-w-3xl text-4xl font-bold leading-tight text-fg md:text-5xl">
-                {t('services:hero.title')}
-              </h1>
-              <p className="mt-4 max-w-2xl text-lg text-fg-muted">{t('services:hero.subtitle')}</p>
-            </Reveal>
-          </Container>
-        </section>
-
-        {/* Intro */}
-        <section aria-labelledby="services-intro-heading" className="py-12 md:py-20">
-          <Container className="grid gap-10 lg:grid-cols-2 lg:items-center">
-            <Reveal>
-              <SectionHeading id="services-intro-heading" title={t('services:intro.heading')} />
-              <p className="mt-4 text-fg-muted">{t('services:intro.body')}</p>
-            </Reveal>
-            <Reveal>
-              <div className="relative aspect-[3/2] overflow-hidden rounded-2xl border border-border">
-                <Image
-                  src="/images/services/intro-cover.svg"
-                  alt={t('services:intro.imageAlt')}
-                  fill
-                  sizes="(min-width: 1024px) 50vw, 100vw"
-                  className="object-cover"
-                />
-              </div>
-            </Reveal>
-          </Container>
-        </section>
-
-        {/* Catalog */}
-        <section aria-labelledby="catalog-heading" className="bg-surface py-12 md:py-20">
-          <Container>
-            <SectionHeading
-              id="catalog-heading"
-              title={t('services:catalog.heading')}
-              subtitle={t('services:catalog.subheading')}
+        {/* Real `.services_section` — a single full-bleed slider, no hero,
+            intro, catalog grid, or CTA. Each slide is a real photo (top 80%)
+            with a white info bar (bottom 20%, min 130px) holding one icon +
+            one line of text, and two chevron buttons pinned to the bar's
+            near corner. `data-infinite="true"` / `data-autoplay="false"`. */}
+        <section className="overflow-hidden">
+          <div className="relative h-[528px] w-full">
+            <Carousel
+              items={servicesDetail}
+              slidesPerView={1}
+              loop
+              className="h-full"
+              hideNav
+              onSwiperInstance={(instance) => {
+                swiperRef.current = instance;
+              }}
+              onSlideChange={setActiveIndex}
+              renderItem={(service) => (
+                <div className="relative h-[528px] w-full">
+                  <Image
+                    src={service.bgUrl}
+                    alt=""
+                    fill
+                    sizes="100vw"
+                    priority={service.id === servicesDetail[0]?.id}
+                    className="object-cover"
+                  />
+                </div>
+              )}
             />
-            <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-              {servicesDetail.map((service) => (
-                <Reveal key={service.id}>
-                  <div className="h-full rounded-2xl border border-border bg-bg p-6">
-                    <span className="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-brand/10">
-                      <Image
-                        src={service.iconUrl}
-                        alt=""
-                        aria-hidden="true"
-                        width={28}
-                        height={28}
-                        className="h-7 w-7 object-contain"
-                      />
-                    </span>
-                    <h3 className="mt-4 text-xl font-semibold text-fg">
-                      {service.title[locale]}
-                    </h3>
-                    <p className="mt-2 text-base text-fg-muted">{service.description[locale]}</p>
-                  </div>
-                </Reveal>
-              ))}
+          </div>
+          {/* Real `.service_down_wrap` — a normal-flow white bar below the
+              photo (never absolutely overlaid on it), so it can never be
+              hidden by the slider's own height/stacking. */}
+          <div className="relative flex flex-col items-center gap-3 bg-white px-4 py-4 sm:min-h-[130px] sm:flex-row sm:justify-center sm:gap-6 sm:ps-8 sm:pe-[218px] sm:py-0">
+            {/* Small screens: controls centered, above the info text. */}
+            <div className="flex items-center gap-3 sm:hidden">
+              <button
+                type="button"
+                onClick={() => swiperRef.current?.slidePrev()}
+                aria-label={t('common:carousel.previous', { defaultValue: 'Previous slide' })}
+                className="flex h-10 w-10 items-center justify-center rounded-full bg-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand"
+              >
+                <Image src={PREV_ARROW_ICON} alt="" width={20} height={20} unoptimized className="h-5 w-5" />
+              </button>
+              <button
+                type="button"
+                onClick={() => swiperRef.current?.slideNext()}
+                aria-label={t('common:carousel.next', { defaultValue: 'Next slide' })}
+                className="flex h-10 w-10 items-center justify-center rounded-full bg-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand"
+              >
+                <Image src={NEXT_ARROW_ICON} alt="" width={20} height={20} unoptimized className="h-5 w-5" />
+              </button>
             </div>
-          </Container>
-        </section>
 
-        {/* Process */}
-        <section aria-labelledby="process-heading" className="py-12 md:py-20">
-          <Container>
-            <SectionHeading
-              id="process-heading"
-              title={t('services:process.heading')}
-              subtitle={t('services:process.subheading')}
+            <Image
+              src={activeService.iconUrl}
+              alt=""
+              aria-hidden="true"
+              width={80}
+              height={72}
+              unoptimized
+              className="h-12 w-14 shrink-0 object-contain sm:h-[72px] sm:w-[80px]"
             />
-            <ol className="mt-10 space-y-6 border-s-2 border-border ps-6">
-              {servicesDetail.map((service, index) => (
-                <li key={service.id} className="relative">
-                  <span
-                    aria-hidden="true"
-                    className="absolute top-1 -start-[27px] flex h-6 w-6 items-center justify-center rounded-full bg-brand text-xs font-bold text-white"
-                  >
-                    {index + 1}
-                  </span>
-                  <p className="font-semibold text-fg">{service.title[locale]}</p>
-                  <p className="mt-1 text-base text-fg-muted">{service.description[locale]}</p>
-                </li>
-              ))}
-            </ol>
-          </Container>
-        </section>
+            <p className="max-w-[720px] text-center text-sm font-medium leading-snug text-fg sm:text-end sm:text-base lg:text-[20px]">
+              {activeService.description[locale]}
+            </p>
 
-        {/* CTA */}
-        <section aria-labelledby="services-cta-heading" className="py-12 md:py-20">
-          <Container className="rounded-2xl bg-brand px-6 py-12 text-center md:px-12">
-            <Reveal>
-              <h2 id="services-cta-heading" className="text-3xl font-bold text-white sm:text-4xl">
-                {t('services:cta.heading')}
-              </h2>
-              <p className="mt-3 text-white/85">{t('services:cta.body')}</p>
-              <div className="mt-6">
-                <Button
-                  href="/contact-us"
-                  variant="secondary"
-                  size="lg"
-                  className="border-white bg-bg text-brand hover:bg-surface-hover"
-                >
-                  {t('services:cta.buttonLabel')}
-                </Button>
-              </div>
-            </Reveal>
-          </Container>
+            {/* Real `.right_arrow` / `.left_arrow` — two 109px-wide chevron
+                buttons pinned to the bar's near corner, sm and up only. */}
+            <div className="absolute bottom-0 start-0 hidden h-full sm:flex">
+              <button
+                type="button"
+                onClick={() => swiperRef.current?.slidePrev()}
+                aria-label={t('common:carousel.previous', { defaultValue: 'Previous slide' })}
+                className="flex w-[109px] items-center justify-center bg-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand"
+              >
+                <Image src={PREV_ARROW_ICON} alt="" width={20} height={20} unoptimized className="h-5 w-5" />
+              </button>
+              <button
+                type="button"
+                onClick={() => swiperRef.current?.slideNext()}
+                aria-label={t('common:carousel.next', { defaultValue: 'Next slide' })}
+                className="flex w-[109px] items-center justify-center bg-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand"
+              >
+                <Image src={NEXT_ARROW_ICON} alt="" width={20} height={20} unoptimized className="h-5 w-5" />
+              </button>
+            </div>
+          </div>
         </section>
       </main>
       <Footer />

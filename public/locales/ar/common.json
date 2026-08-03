@@ -1,19 +1,20 @@
 {
   "header": {
     "callUs": "اتصل بنا",
-    "whatsapp": "تواصل معنا عبر واتساب"
+    "whatsapp": "تواصل معنا عبر واتساب",
+    "costomerServices":"خدمة العملاء"
   },
   "nav": {
     "whoWeAre": "من نحن",
-    "ourProducts": "منتجاتنا",
-    "services": "الخدمات",
+    "ourProducts": "أجهزتنا",
+    "services": "خدماتنا",
     "washCloud": "واش كلاود",
-    "afterSale": "ما بعد البيع",
-    "contactUs": "تواصل معنا",
-    "knowledgeLibrary": "مكتبة المعرفة",
+    "afterSale": "بعد البيع",
+    "contactUs": "اتصل بنا",
+    "knowledgeLibrary": "المعرفة",
     "blueprints": "المخططات",
     "blog": "المدونة",
-    "agentLogin": "دخول الوكلاء",
+    "agentLogin": "تسجيل دخول الوكلاء",
     "primaryLabel": "التنقل الرئيسي",
     "openMenu": "فتح القائمة",
     "more": "المزيد"

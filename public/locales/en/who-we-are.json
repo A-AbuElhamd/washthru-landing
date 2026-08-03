@@ -22,17 +22,15 @@
     "body": "We seek to provide high-quality automated car wash solutions that rely on state-of-the-art AI and IoT technologies and to export Saudi technology to global markets."
   },
   "values": {
-    "heading": "Our values",
-    "subheading": "The principles that shape how we work with every client and partner."
+    "heading": "Our Values Reflect Our Quality",
+    "items": ["Quality & Precision", "Continuous Innovation", "Honesty & Transparency"]
   },
   "goals": {
-    "heading": "Our goals",
-    "subheading": "The quality of what we build starts with the clarity of our goals."
+    "headingLine1": "Our Goals",
+    "headingLine2": "The Quality of Our Craft"
   },
   "timeline": {
-    "heading": "This Is Where We Started",
-    "subheading": "Key milestones in our growth over the years.",
-    "imageAlt": "Eng. Abdulsalam Alsaiary, Administrative Consultant and WashThru board member"
+    "heading": "Our Origin"
   },
   "team": {
     "heading": "Our Personnel, the Key of Our Success",

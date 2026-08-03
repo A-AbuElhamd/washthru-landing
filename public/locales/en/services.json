@@ -1,29 +1,7 @@
 {
   "meta": {
-    "title": "Automatic Car Wash Installation & Turnkey Solutions | WashThru",
-    "description": "Automatic car wash installation services covering consulting, site preparation, installation, and maintenance, tailored to your project requirements across Saudi Arabia."
+    "title": "Automatic Car Wash Installation & Turnkey Solutions | Washthru",
+    "description": "Professional automatic car wash installation, site preparation, and turnkey solutions tailored to your car wash setup requirements across Saudi Arabia & Libya."
   },
-  "breadcrumbLabel": "Services",
-  "hero": {
-    "title": "End-to-end solutions for your car wash project",
-    "subtitle": "From the first consultation to installation and long-term maintenance, we support every step of your car wash project."
-  },
-  "intro": {
-    "heading": "Our services",
-    "body": "Our work goes beyond manufacturing machines — we provide a complete service system covering every stage of your project, from site assessment through to technical support and maintenance after launch.",
-    "imageAlt": "WashThru technical team delivering an installation service on site"
-  },
-  "catalog": {
-    "heading": "Our service catalog",
-    "subheading": "Ten specialized services covering your entire project journey."
-  },
-  "process": {
-    "heading": "How we work with you",
-    "subheading": "A clear, structured journey from the first consultation to actual machine commissioning."
-  },
-  "cta": {
-    "heading": "Ready to start your project?",
-    "body": "Talk to our team for an initial consultation about our services and your site's requirements.",
-    "buttonLabel": "Get a quote"
-  }
+  "breadcrumbLabel": "Services"
 }

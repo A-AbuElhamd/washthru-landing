@@ -1,17 +1,18 @@
 {
   "header": {
     "callUs": "Call us",
-    "whatsapp": "Contact us on WhatsApp"
+    "whatsapp": "Contact us on WhatsApp",
+    "costomerServices":"Costomers service"
   },
   "nav": {
     "whoWeAre": "Who We Are",
-    "ourProducts": "Our Products",
-    "services": "Services",
-    "washCloud": "WashCloud",
-    "afterSale": "After-Sale",
+    "ourProducts": "Our Devices",
+    "services": "Our Services",
+    "washCloud": "Wash Cloud",
+    "afterSale": "After Sales",
     "contactUs": "Contact Us",
-    "knowledgeLibrary": "Knowledge Library",
-    "blueprints": "Blueprints",
+    "knowledgeLibrary": "Knowledge",
+    "blueprints": "Plans",
     "blog": "Blog",
     "agentLogin": "Agent Login",
     "primaryLabel": "Primary navigation",
