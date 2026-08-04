@@ -2,32 +2,30 @@ import type { LocalizedText } from '@/data/features';
 
 export interface KnowledgeResource {
   id: string;
-  category: LocalizedText;
   title: LocalizedText;
   description: LocalizedText;
   /** Cover thumbnail per locale, sourced from the live site's CDN. */
   cover: LocalizedText;
   /** Direct PDF download link per locale, sourced from the live site's CDN. */
   pdfUrl: LocalizedText;
+  /** Number of leading title words rendered in the real `.blue` accent color. Defaults to 1. */
+  highlightWords?: number;
 }
 
 const CDN = 'https://cdn.prod.website-files.com/63aad373fdf77ff7df65db58';
 
 /**
- * The document library published on the real site's knowledge-library page —
- * company profile/booklet, per-model technical brochures, a comparison
- * table, and the full catalogue. Covers and PDFs are the live site's own CDN
- * assets; descriptions are drawn directly from the live page's copy (light
- * cleanup only). Only resources that exist in BOTH locales on the live site
- * are listed here, so every card resolves to a real document in either
- * language — a few AR-only or EN-only extras (an RT-v1 brochure, an RCV
- * rental feasibility study, a QR brochure) aren't included since they don't
- * have a matching counterpart in the other language.
+ * The document library published on the real site's knowledge-library page,
+ * in the exact same order as the live `.kl_books_section` DOM. Covers and
+ * PDFs are the live site's own CDN assets. Two entries (`brochure`,
+ * `rcv-rental-feasibility`) don't have a matching document in the other
+ * locale on the live site — `rcv-rental-feasibility`'s EN copy is a
+ * translation reusing the AR-only PDF/cover (no EN asset exists), same as
+ * the live site's own `brochure` card, which reuses the catalogue PDF.
  */
 export const knowledgeLibraryResources: KnowledgeResource[] = [
   {
     id: 'company-profile',
-    category: { ar: 'بروفايل الشركة', en: 'Company profile' },
     title: { ar: 'بروفايل واش ثرو', en: 'WashThru Profile' },
     description: {
       ar: 'يُعد هذا البروفايل مرجعًا موثوقًا يمنح الجهات المهتمّة فهمًا واضحًا عن واش ثرو، ويبرز مكانتها كشركة متخصصة تتمتع بنهج مبتكر وحلول عالية الجودة في سوق خدمات غسيل السيارات.',
@@ -44,7 +42,6 @@ export const knowledgeLibraryResources: KnowledgeResource[] = [
   },
   {
     id: 'company-booklet',
-    category: { ar: 'كتيب تعريفي', en: 'Booklet' },
     title: { ar: 'كتيب واش ثرو', en: 'WashThru Booklet' },
     description: {
       ar: 'كتيب يقدم معلومات شاملة عن تقنيات غسيل السيارات المتقدمة، بحيث إنه مرجع ممتاز لحلول تنظيف فعالة وحديثة.',
@@ -61,7 +58,6 @@ export const knowledgeLibraryResources: KnowledgeResource[] = [
   },
   {
     id: 'rs-v4-rollover',
-    category: { ar: 'رول أوفر', en: 'Rollover' },
     title: { ar: 'RS-v4 رول أوفر', en: 'RS-v4 Rollover' },
     description: {
       ar: 'جهاز RS-v4 يقدم تنظيفاً عميقاً واحترافياً باستخدام أحدث التقنيات، بحيث إنه الخيار الأكثر تطوراً لتحقيق أفضل النتائج.',
@@ -78,7 +74,6 @@ export const knowledgeLibraryResources: KnowledgeResource[] = [
   },
   {
     id: 'rh-v1-rollover',
-    category: { ar: 'رول أوفر', en: 'Rollover' },
     title: { ar: 'RH-v1 رول أوفر', en: 'RH-v1 Rollover' },
     description: {
       ar: 'جهاز RH-v1 يقدم حلول تنظيف فعّالة بسعر اقتصادي، مع أداء موثوق يناسب الاستخدامات المتعددة.',
@@ -94,28 +89,10 @@ export const knowledgeLibraryResources: KnowledgeResource[] = [
     },
   },
   {
-    id: 'ra-v1-rollover',
-    category: { ar: 'رول أوفر', en: 'Rollover' },
-    title: { ar: 'RA-v1 رول أوفر', en: 'RA-v1 Rollover' },
-    description: {
-      ar: 'يقدّم RA-v1 حلول تنظيف مبتكرة وفعّالة مع دقة عالية وحماية مثالية لطلاء السيارة، مناسب لجميع أحجام السيارات وأماكن التركيب.',
-      en: 'The RA-v1 delivers innovative and efficient cleaning solutions with high precision and optimal protection for vehicle paint, making it suitable for all vehicle sizes and installation locations.',
-    },
-    cover: {
-      ar: `${CDN}/6939532790b7bfcf99cba66e_RA%20cover%201.jpg`,
-      en: `${CDN}/694162bc8180f62202cb8e2c_WhatsApp%20Image%202025-12-16%20at%201.29.59%20PM.jpeg`,
-    },
-    pdfUrl: {
-      ar: `${CDN}/693940ea7ffc7d8ab5e60bd2_RA-v1_compressed.pdf`,
-      en: `${CDN}/6941655e6ed599c88cf9aec0_RA%20v1%20e_compressed.pdf`,
-    },
-  },
-  {
     id: 'rf-v1-touchless',
-    category: { ar: 'بدون لمس', en: 'Touchless' },
     title: { ar: 'RF-v1 بدون لمس', en: 'RF-v1 Touchless' },
     description: {
-      ar: 'RF-v1 غسيل أوتوماتيكي بتقنية بدون لمس، يحافظ على طلاء السيارة، بتصميم مدمج بحجم أصغر وسعر منافس، ليكون حلاً اقتصاديًا لفتح مشروع مغسلة سيارات بأقل تكلفة ومناسبًا لمختلف السيارات وأماكن التركيب.',
+      ar: 'RF-v1 غسيل أوتوماتيكي بتقنية بدون لمس، يحافظ على طلاء السيارة. يتميز بتصميم مدمج بحجم أصغر وسعر منافس، ليكون حلاً اقتصاديًا لفتح مشروع مغسلة سيارات بأقل تكلفة و مناسبًا لمختلف السيارات وأماكن التركيب.',
       en: 'The RF-v1 is a touchless automatic car wash system that protects vehicle paint. Its compact design and competitive price make it an economical solution for starting a car wash business, suitable for various vehicles and installation locations.',
     },
     cover: {
@@ -129,7 +106,6 @@ export const knowledgeLibraryResources: KnowledgeResource[] = [
   },
   {
     id: 'rcv-v1-touchless',
-    category: { ar: 'بدون لمس', en: 'Touchless' },
     title: { ar: 'RCV-v1 بدون لمس', en: 'RCV-v1 Touchless' },
     description: {
       ar: 'RCV-v1 غسيل أوتوماتيكي بدقة عالية وبتقنية بدون لمس، يحمي طلاء السيارة، حل اقتصادي منخفض التكلفة ومناسب لجميع السيارات وأماكن التركيب.',
@@ -145,9 +121,56 @@ export const knowledgeLibraryResources: KnowledgeResource[] = [
     },
   },
   {
+    id: 'ra-v1-rollover',
+    title: { ar: 'RA-v1 رول أوفر', en: 'RA-v1 Rollover' },
+    description: {
+      ar: 'يقدّم RA-v1 حلول تنظيف مبتكرة وفعّالة مع دقة عالية وحماية مثالية لطلاء السيارة، مناسب لجميع أحجام السيارات وأماكن التركيب.',
+      en: 'The RA-v1 delivers innovative and efficient cleaning solutions with high precision and optimal protection for vehicle paint, making it suitable for all vehicle sizes and installation locations.',
+    },
+    cover: {
+      ar: `${CDN}/6939532790b7bfcf99cba66e_RA%20cover%201.jpg`,
+      en: `${CDN}/694162bc8180f62202cb8e2c_WhatsApp%20Image%202025-12-16%20at%201.29.59%20PM.jpeg`,
+    },
+    pdfUrl: {
+      ar: `${CDN}/693940ea7ffc7d8ab5e60bd2_RA-v1_compressed.pdf`,
+      en: `${CDN}/6941655e6ed599c88cf9aec0_RA%20v1%20e_compressed.pdf`,
+    },
+  },
+  {
+    id: 'brochure',
+    title: { ar: 'بروشور واش ثرو', en: 'Wash Thru Machines Brochure' },
+    description: {
+      ar: 'يقدّم بروشور واش ثرو جميع معلومات الماكينات والتقنيات عبر فحص رمز QR، مما يتيح الوصول السريع والدقيق للبيانات.',
+      en: 'A complete catalogue featuring technical data, detailed specifications, and flexible installation options, making it easier for you to choose the right machine for your business.',
+    },
+    cover: {
+      ar: `${CDN}/693950909c6a6ae3de8f8775_%D8%A8%D8%B1%D9%88%D8%B4%D9%88%D8%B1%20%D9%83%D8%A7%D9%81%D8%B1.jpg`,
+      en: `${CDN}/69afc6e7766a8ba798b51818_WhatsApp%20Image%202026-03-09%20at%209.45.27%20AM.jpeg`,
+    },
+    pdfUrl: {
+      ar: `${CDN}/69ca55b225a2a45ca0078bed_broucheur%20gaddah%20event%20copy.pdf`,
+      en: `${CDN}/69ae6dfff26fbb953ca0937a_%D9%83%D8%AA%D8%A7%D9%84%D9%88%D8%AC%20%D8%A7%D9%86%D8%AC%D9%84%D9%8A%D8%B2%D9%8A%20copy.pdf`,
+    },
+  },
+  {
+    id: 'machines-catalogue',
+    title: { ar: 'كتالوج أجهزة واش ثرو', en: 'WashThru Machines Catalogue' },
+    description: {
+      ar: 'كتالوج شامل يقدم التفاصيل التقنية، المواصفات التفصيلية، وخيارات التركيب المتنوعة، ليمنحك تجربة اختيار سهلة لأجهزة الغسيل.',
+      en: 'A complete catalogue featuring technical data, detailed specifications, and flexible installation options, making it easier for you to choose the right machine for your business.',
+    },
+    cover: {
+      ar: `${CDN}/6909e04ec0977b798fc2ba7a__%D9%83%D8%A7%D9%81%D8%B1%20%D9%83%D8%AA%D8%A7%D9%88%D8%AC%20%D8%B9%D8%B1%D8%A8%D9%8A.jpg`,
+      en: `${CDN}/691311ffb29dd8fc8072b308_Catalogue%201%20(1).png`,
+    },
+    pdfUrl: {
+      ar: `${CDN}/69cd1c0eb2718f98f99c83f9_%D9%83%D8%AA%D8%A7%D9%84%D9%88%D8%AC%20%D9%81%D8%A7%D9%8A%D9%86%D8%A7%D9%84%206%20%D8%A7%D8%AC%D9%87%D8%B2%D8%A9%20copy.pdf`,
+      en: `${CDN}/69ae6dfff26fbb953ca0937a_%D9%83%D8%AA%D8%A7%D9%84%D9%88%D8%AC%20%D8%A7%D9%86%D8%AC%D9%84%D9%8A%D8%B2%D9%8A%20copy.pdf`,
+    },
+  },
+  {
     id: 'machines-comparison-table',
-    category: { ar: 'مرجع', en: 'Reference' },
-    title: { ar: 'جدول مقارنة الأجهزة', en: 'Machines Comparison Table' },
+    title: { ar: 'جدول مقارنات الأجهزة', en: 'Machines Comparison Table' },
     description: {
       ar: 'كل ما تحتاج معرفته عن أجهزة واش ثرو، مرجعك لاختيار الجهاز المثالي بناءً على البيانات الفنية والمواصفات الدقيقة.',
       en: 'Everything you need to know about WashThru machines — your go-to reference for selecting the perfect system based on technical data and detailed specifications.',
@@ -162,20 +185,20 @@ export const knowledgeLibraryResources: KnowledgeResource[] = [
     },
   },
   {
-    id: 'machines-catalogue',
-    category: { ar: 'كتالوج', en: 'Catalogue' },
-    title: { ar: 'كتالوج أجهزة واش ثرو', en: 'WashThru Machines Catalogue' },
+    id: 'rcv-rental-feasibility',
+    highlightWords: 2,
+    title: { ar: 'دراسة جدوى تأجير ماكينة RCV', en: 'RCV Rental Feasibility Study' },
     description: {
-      ar: 'كتالوج شامل يقدم التفاصيل التقنية، المواصفات التفصيلية، وخيارات التركيب المتنوعة، ليمنحك تجربة اختيار سهلة لأجهزة الغسيل.',
-      en: 'A complete catalogue featuring technical data, detailed specifications, and flexible installation options, making it easier for you to choose the right machine for your business.',
+      ar: 'مرجعك لاتخاذ القرار الأمثل بناءً على التحليل المالي والتشغيلي والعائد المتوقع من تأجير ماكينة RCV, مع العلم أن هذه الأرقام هي تقديرات تقريبية.',
+      en: 'Your reference for making the right decision based on the financial and operational analysis and the expected return from renting the RCV machine, noting that these figures are approximate estimates.',
     },
     cover: {
-      ar: `${CDN}/6909e04ec0977b798fc2ba7a__%D9%83%D8%A7%D9%81%D8%B1%20%D9%83%D8%AA%D8%A7%D9%88%D8%AC%20%D8%B9%D8%B1%D8%A8%D9%8A.jpg`,
-      en: `${CDN}/691311ffb29dd8fc8072b308_Catalogue%201%20(1).png`,
+      ar: `${CDN}/6926f3ffe54eb0748fcefc29_%D8%AF%D8%B1%D8%A7%D8%B3%D8%A9%20%D8%AC%D8%AF%D9%88%D9%89%20%D8%AA%D8%A7%D9%94%D8%AC%D9%8A%D8%B1%20%D9%85%D8%A7%D9%83%D9%8A%D9%86%D8%A9%20RCV.png`,
+      en: `${CDN}/6926f3ffe54eb0748fcefc29_%D8%AF%D8%B1%D8%A7%D8%B3%D8%A9%20%D8%AC%D8%AF%D9%88%D9%89%20%D8%AA%D8%A7%D9%94%D8%AC%D9%8A%D8%B1%20%D9%85%D8%A7%D9%83%D9%8A%D9%86%D8%A9%20RCV.png`,
     },
     pdfUrl: {
-      ar: `${CDN}/69cd1c0eb2718f98f99c83f9_%D9%83%D8%AA%D8%A7%D9%84%D9%88%D8%AC%20%D9%81%D8%A7%D9%8A%D9%86%D8%A7%D9%84%206%20%D8%A7%D8%AC%D9%87%D8%B2%D8%A9%20copy.pdf`,
-      en: `${CDN}/69ae6dfff26fbb953ca0937a_%D9%83%D8%AA%D8%A7%D9%84%D9%88%D8%AC%20%D8%A7%D9%86%D8%AC%D9%84%D9%8A%D8%B2%D9%8A%20copy.pdf`,
+      ar: `${CDN}/69285a9e5af3a4328f064b2c_%D8%AF%D8%B1%D8%A7%D8%B3%D8%A9%20%D8%AC%D8%AF%D9%88%D9%89%20%D8%AC%D9%87%D8%A7%D8%B2%20%D8%A7%D8%B1%20%D8%B3%D9%8A%20%D9%81%D9%8A.pdf`,
+      en: `${CDN}/69285a9e5af3a4328f064b2c_%D8%AF%D8%B1%D8%A7%D8%B3%D8%A9%20%D8%AC%D8%AF%D9%88%D9%89%20%D8%AC%D9%87%D8%A7%D8%B2%20%D8%A7%D8%B1%20%D8%B3%D9%8A%20%D9%81%D9%8A.pdf`,
     },
   },
 ];

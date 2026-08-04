@@ -1,15 +1,12 @@
 {
   "slug": "station-1street-small-001",
   "locale": "ar",
-  "title": "مخطط محطة صغيرة على شارع واحد",
-  "description": "تصميم مدمج لمحطة غسيل على شارع واحد يناسب قطع الأراضي الأصغر مساحة، مع الحفاظ على تدفق مريح لحركة السيارات عند الدخول والخروج دون تزاحم.",
+  "title": "مخطط محطة صغيره على شارع واحد",
+  "imageUrl": "https://cdn.prod.website-files.com/63ad5763910c705357b1c574/64ae6dbf4337a0238df60921_Plan%2006.jpg",
   "planType": "station",
-  "planTypeLabel": "محطة",
   "streetConfig": "one-street",
-  "streetConfigLabel": "شارع واحد",
   "planNumber": "S003",
-  "areaSqm": 1020,
-  "dimensions": { "widthM": 34, "depthM": 30 },
-  "sketchfabEmbedUrl": "https://sketchfab.com/models/da72a1347a4d4fa1a890c010c24ccee5/embed?annotations_visible=1&preload=1",
-  "pdfUrl": "https://cdn.prod.website-files.com/63aad373fdf77ff7df65db58/64d9fdea9cc52bd948dfc048_AR-S003.pdf"
+  "measurementLabel": "34*30 متر",
+  "areaLabel": "1020 متر مربع",
+  "ideaLabel": "واش ثرو"
 }

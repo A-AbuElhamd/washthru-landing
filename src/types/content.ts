@@ -1,27 +1,32 @@
 import type { Locale } from '@/types/i18n';
 
-export interface BlueprintPlanDimensions {
-  widthM: number;
-  depthM: number;
-}
-
+/**
+ * Mirrors the real site's `.collection-item-2` blueprint card fields
+ * exactly — `measurementLabel`/`areaLabel` are pre-rendered display strings,
+ * not numbers, because the real site itself shows literal "00000"
+ * placeholders for several plans (unfilled CMS fields) rather than real
+ * measurements. There's no description, 3D viewer, or PDF on the real
+ * site's cards — only these four spec rows.
+ */
 export interface BlueprintPlan {
   slug: string;
   locale: Locale;
   title: string;
-  description: string;
-  planType: 'service-center' | 'station';
-  /** Already-localized display label — content JSON mirrors the blog pattern of shipping translated strings, not i18n keys, for per-item data. */
-  planTypeLabel: string;
-  streetConfig: 'one-street' | 'two-streets-before' | 'two-streets-behind';
-  streetConfigLabel: string;
+  imageUrl: string;
+  planType: 'station';
+  streetConfig:
+    | 'one-street'
+    | 'two-streets-before'
+    | 'two-streets-after'
+    | 'two-streets-behind'
+    | 'three-streets-before'
+    | 'three-streets-after'
+    | 'three-streets-behind'
+    | 'four-streets';
   planNumber: string;
-  areaSqm: number;
-  dimensions: BlueprintPlanDimensions;
-  /** Sketchfab embed URL for this plan's 3D model, or null to render the placeholder viewer. */
-  sketchfabEmbedUrl: string | null;
-  /** Downloadable plan PDF, or null to render the placeholder download button. */
-  pdfUrl: string | null;
+  measurementLabel: string;
+  areaLabel: string;
+  ideaLabel: string;
 }
 
 export interface BlogPostAuthor {

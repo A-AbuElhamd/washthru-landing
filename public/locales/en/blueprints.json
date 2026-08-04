@@ -1,33 +1,35 @@
 {
-  "index": {
-    "title": "Blueprints",
-    "heading": "Ready-Made Blueprints",
-    "subtitle": "Browse ready-made layout plans for automatic car wash service centers and stations, built to help you plan a productive site before you build.",
-    "cardAreaLabel": "Area",
-    "cardTypeLabel": "Type",
-    "viewPlan": "View plan details",
-    "serviceCenterHeading": "Service Center Blueprints",
-    "stationHeading": "Station Blueprints"
+  "meta": {
+    "title": "Ready-Made Plans | WashThru",
+    "description": "For every entity looking for smart and highly productive solutions in the car wash sector, we offer various ready-made plans to help facilitate the planning of your projects."
   },
-  "detail": {
-    "backToBlueprints": "Back to Blueprints",
-    "planTypeLabel": "Plan type",
-    "streetConfigLabel": "Street access",
-    "planNumberLabel": "Plan number",
-    "areaLabel": "Area",
-    "areaUnit": "{{value}} sq m",
-    "dimensionsLabel": "Dimensions",
-    "dimensionsValue": "{{width}} × {{depth}} m",
-    "modelHeading": "3D Model",
-    "modelPlaceholderTitle": "3D model viewer placeholder",
-    "modelPlaceholderBody": "Embed a real Sketchfab model here to preview this blueprint in 3D.",
-    "downloadHeading": "Blueprint PDF",
-    "downloadButton": "Download PDF",
-    "downloadButtonPlaceholder": "Download PDF (unavailable)",
-    "downloadUnavailable": "PDF download is not available in this preview.",
-    "shareHeading": "Share this plan",
-    "shareWhatsapp": "Share via WhatsApp",
-    "shareX": "Share via X",
-    "shareFacebook": "Share via Facebook"
-  }
+  "hero": {
+    "titleLine1": "Ready-made",
+    "titleLine2": "plans",
+    "intro": "For every entity looking for smart and highly productive solutions in the car wash sector, we offer you various ready-made plans that will help you facilitate the planning of your projects, and we look forward to working with you as success partners."
+  },
+  "tabs": {
+    "choosePlanType": "Choose the plan type:",
+    "serviceCenter": "Service center plans",
+    "station": "stations plans",
+    "streets4": "On 4 streets",
+    "streets3": "On 3 streets",
+    "streets2": "On 2 streets",
+    "streets1": "On 1 street",
+    "streets4Icon": "4streets",
+    "streets1Icon": "On 1 street",
+    "neighborBefore": "neighbor before",
+    "neighborAfter": "neighbor after",
+    "neighborBehind": "neighbor behind",
+    "streetBefore": "street before",
+    "streetAfter": "street after",
+    "streetBehind": "street behind"
+  },
+  "card": {
+    "measurementLabel": "Measurement:",
+    "areaLabel": "Area:",
+    "planNumberLabel": "Plan number:",
+    "ideaLabel": "Plan idea:"
+  },
+  "emptyState": "No plans currently available"
 }

@@ -2,14 +2,11 @@
   "slug": "station-1street-large-001",
   "locale": "ar",
   "title": "مخطط محطة كبيرة على شارع واحد",
-  "description": "أكبر تصميم محطة غسيل ضمن هذه المجموعة، على شارع واحد، بمساحة أرض أوسع تدعم معدل تدفق مركبات أعلى ومساحة غسيل وانتظار أكبر، مناسب للمواقع ذات الحركة المرورية الكثيفة.",
+  "imageUrl": "https://cdn.prod.website-files.com/63ad5763910c705357b1c574/64abfbba82ad9b23af8590c5_Plan%2003.jpg",
   "planType": "station",
-  "planTypeLabel": "محطة",
   "streetConfig": "one-street",
-  "streetConfigLabel": "شارع واحد",
   "planNumber": "S001",
-  "areaSqm": 1450,
-  "dimensions": { "widthM": 42, "depthM": 35 },
-  "sketchfabEmbedUrl": "https://sketchfab.com/models/ba69b0bce126490391c59b2595aa3d6d/embed?annotations_visible=1&preload=1",
-  "pdfUrl": "https://cdn.prod.website-files.com/63aad373fdf77ff7df65db58/64d9fdeb13e9e2fb15aef337_AR-S001.pdf"
+  "measurementLabel": "00000",
+  "areaLabel": "00000",
+  "ideaLabel": "واش ثرو"
 }
