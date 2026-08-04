@@ -4,18 +4,21 @@
     "description": "تواصل معنا لطلب عرض سعر مغسلة سيارات أتوماتيكية، شراء المعدات، والحصول على استشارة فنية للمشروع."
   },
   "page": {
-    "title": "اتصل بنا",
-    "intro": "لكل جهة باحثة عن حلول ذكية وذات إنتاجية عالية في قطاع غسيل السيارات، نتطلع للعمل معكم وأن نكون شركاء نجاح في مشاريعكم، كما نسعد بتواصلكم معنا في «واش ثرو» عبر قنواتنا التالية:",
+    "titleLine1": "اتصل",
+    "titleLine2": "بنــــــــــا",
+    "intro": "لكل جهة باحثة عن حلول ذكية وذات إنتاجية عالية في قطاع غسيل السيارات، نتطلع للعمل معكم وأن نكون شركاء نجاح في مشاريعكم كما نسعد بتواصلكم معنا في «واش ثرو Wash Thru» عبر قنواتنا التالية:",
     "imageAlt": "رسم توضيحي يمثل قنوات التواصل مع عملاء واش ثرو"
   },
   "info": {
-    "phoneLabel": "الهاتف",
-    "whatsappLabel": "واتساب",
+    "phoneLabel": "رقم التواصل",
+    "phoneInternalLabel": "داخلي",
+    "phoneInternationalLabel": "دولي",
     "emailLabel": "البريد الإلكتروني",
-    "hoursLabel": "مواعيد العمل",
-    "hoursValue": "من السبت إلى الخميس، من 10 صباحًا حتى 5 مساءً",
-    "locationLabel": "الموقع",
-    "locationValue": "جدة - المملكة العربية السعودية"
+    "hoursLabel": "مواعيــد العمـــل",
+    "hoursLine1": "من 10 ص الي 5 م",
+    "hoursLine2": "من السبت الي الخميس",
+    "locationLabel": "المـــــــوقع",
+    "locationValue": "جده- المملكة العربية السعودية"
   },
   "form": {
     "heading": "تواصل معنا",
@@ -28,24 +31,24 @@
       "maintenance": "عقد صيانة"
     },
     "name": "الاسم",
-    "namePlaceholder": "اسمك الكامل",
+    "namePlaceholder": "الاسم",
     "city": "المدينة",
-    "cityPlaceholder": "مدينتك",
-    "phone": "رقم الجوال",
-    "phonePlaceholder": "05xxxxxxxx",
-    "email": "البريد الإلكتروني",
-    "emailPlaceholder": "example@email.com",
-    "hasCarWashLabel": "هل لديك مغسلة سيارات حاليًا؟",
+    "cityPlaceholder": "المدينة",
+    "phone": "الجوال",
+    "phonePlaceholder": "الجوال",
+    "email": "الايميل",
+    "emailPlaceholder": "الايميل",
+    "hasCarWashLabel": "هل لديك مغسلة؟",
     "hasCarWashYes": "نعم",
     "hasCarWashNo": "لا",
     "message": "الرسالة",
-    "messageOptional": "(اختياري)",
-    "messagePlaceholder": "أخبرنا عن مشروعك أو استفسارك",
-    "submit": "إرسال الرسالة",
-    "success": "شكرًا لك! تم استلام رسالتك."
+    "messageOptional": "(إختياري)",
+    "messagePlaceholder": "الرسالة (إختياري)",
+    "submit": "ارسال",
+    "success": "شكرًا لك! تم استلام رسالتك!"
   },
   "map": {
-    "heading": "قم بزيارتنا",
+    "heading": "قـــــم بزيارتنـــــــــا",
     "iframeTitle": "خريطة توضح موقع واش ثرو في جدة، المملكة العربية السعودية"
   }
 }

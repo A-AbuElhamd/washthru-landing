@@ -1,9 +1,10 @@
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import type { GetStaticProps, NextPage } from 'next';
 import Image from 'next/image';
 import { serverSideTranslations } from 'next-i18next/pages/serverSideTranslations';
 import { useTranslation } from 'next-i18next/pages';
-import { Check, Info } from 'lucide-react';
+import { Check, ChevronLeft, ChevronRight, Info } from 'lucide-react';
+import type { Swiper as SwiperInstance } from 'swiper/types';
 import { Seo } from '@/components/shared/Seo';
 import { Header } from '@/components/shared/Header';
 import { Footer } from '@/components/shared/Footer';
@@ -55,10 +56,10 @@ const TAB_BG_ACTIVE_URL =
  */
 function FeatureRow({ feature }: { feature: PlanFeature }) {
   return (
-    <li className="group relative flex items-start justify-between gap-2 text-sm text-fg-muted">
-      <span className="flex items-start gap-2">
+    <li className="group relative flex min-w-0 items-start justify-between gap-2 text-sm text-fg-muted">
+      <span className="flex min-w-0 items-start gap-2">
         <Check aria-hidden="true" className="mt-0.5 h-4 w-4 shrink-0 text-brand" />
-        <span>{feature.text}</span>
+        <span className="break-words">{feature.text}</span>
       </span>
       {feature.detail ? (
         <>
@@ -71,7 +72,7 @@ function FeatureRow({ feature }: { feature: PlanFeature }) {
           </button>
           <div
             role="tooltip"
-            className="invisible absolute end-0 top-full z-20 mt-2 w-72 rounded-md border border-brand bg-bg p-4 text-start text-sm text-fg opacity-0 shadow-lg transition-opacity group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100"
+            className="invisible absolute end-0 top-full z-20 mt-2 w-72 max-w-[85vw] rounded-md border border-brand bg-bg p-4 text-start text-sm text-fg opacity-0 shadow-lg transition-opacity group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100"
           >
             {feature.detail}
           </div>
@@ -114,6 +115,7 @@ const AfterSalePage: NextPage = () => {
   const { t } = useTranslation(['common', 'after-sale']);
   const locale = useLocale();
   const [billing, setBilling] = useState<'monthly' | 'annual'>('annual');
+  const warrantySwiperRef = useRef<SwiperInstance | null>(null);
 
   const title = t('after-sale:meta.title');
   const description = t('after-sale:meta.description');
@@ -148,16 +150,37 @@ const AfterSalePage: NextPage = () => {
         {/* Real `.as-hero-section` — a single autoplaying warranty carousel
             (icon + heading text per slide), not a static hero. */}
         <section
-          className="py-20 md:py-40  md:min-h-[620px] bg-no-repeat bg-[position:100%_center]"
+          className="py-20 md:py-40  md:min-h-[620px] bg-no-repeat bg-[position:100%_center] "
           style={{ backgroundImage: `url(${HERO_BG_URL})` }}
         >
-          <Container>
+          <Container className="relative">
+            {/* Real chevron nav — visible on small screens only; larger
+                screens rely on swipe/autoplay and the dots below. */}
+            <button
+              type="button"
+              onClick={() => warrantySwiperRef.current?.slidePrev()}
+              aria-label={t('common:carousel.previous', { defaultValue: 'Previous slide' })}
+              className="absolute start-2 top-20 z-10 -translate-y-1/2 text-brand sm:top-28 lg:hidden"
+            >
+              <ChevronRight aria-hidden="true" className="h-8 w-8" />
+            </button>
+            <button
+              type="button"
+              onClick={() => warrantySwiperRef.current?.slideNext()}
+              aria-label={t('common:carousel.next', { defaultValue: 'Next slide' })}
+              className="absolute end-2 top-20 z-10 -translate-y-1/2 text-brand sm:top-28 lg:hidden"
+            >
+              <ChevronLeft aria-hidden="true" className="h-8 w-8" />
+            </button>
             <Carousel
               items={warrantyItems}
               slidesPerView={1}
               loop
               autoplayDelay={4000}
               showDots
+              onSwiperInstance={(instance) => {
+                warrantySwiperRef.current = instance;
+              }}
               renderItem={(item) => (
                 <div className="flex flex-col items-center gap-8 text-center md:flex-row md:gap-28 md:text-start">
                   <p className="max-w-xl text-xl font-light leading-[1.8] text-brand sm:text-2xl lg:text-[32px] order-2 md:order-1">
@@ -216,13 +239,15 @@ const AfterSalePage: NextPage = () => {
               ))}
             </div>
 
-            <div className="mt-10 grid gap-6 lg:grid-cols-4">
+            {/* Real site: a horizontally-scrolling row of fixed-width cards
+                below `lg`, becoming a plain 4-column grid at `lg` and up. */}
+            <div className="mt-10 flex items-stretch gap-6 overflow-x-auto pb-4 snap-x snap-mandatory lg:grid lg:grid-cols-4 lg:items-stretch lg:overflow-visible lg:pb-0">
               {tiers.map((tier) => {
                 const price = billing === 'monthly' ? tier.priceMonthly : tier.priceAnnual;
                 const bonus = tier.bonus?.[billing] ?? null;
 
                 return (
-                  <div key={tier.id} className="relative h-full">
+                  <div key={tier.id} className="relative w-[280px] shrink-0 snap-start lg:w-auto">
                     {tier.highlighted ? (
                       <span className="absolute -top-3 start-6 z-10 rounded-full bg-brand px-4 py-1 text-xs font-medium text-white">
                         {recommendedBadge}
@@ -233,7 +258,7 @@ const AfterSalePage: NextPage = () => {
                         backgroundImage: `url(${tier.highlighted ? PACKAGE_BG_RECOMMENDED_URL : PACKAGE_BG_URL})`,
                       }}
                       className={cn(
-                        'flex h-full flex-col bg-left-top bg-auto bg-no-repeat p-6 transition-shadow duration-300 hover:shadow-[28px_10px_30px_rgba(0,0,0,0.2)]',
+                        'flex h-full min-w-0 flex-col bg-left-top bg-auto bg-no-repeat p-6 transition-shadow duration-300 hover:shadow-[28px_10px_30px_rgba(0,0,0,0.2)]',
                         tier.highlighted ? 'border-b-2 border-r-2 border-brand' : 'border-b-[3px] border-r-[3px] border-[#e9e9e9]'
                       )}
                     >
@@ -256,7 +281,7 @@ const AfterSalePage: NextPage = () => {
                       {tier.discounts.length > 0 ? (
                         <ul className="flex flex-col gap-1">
                           {tier.discounts.map((discount) => (
-                            <li key={discount} className="text-sm text-live">
+                            <li key={discount} className="break-words text-sm text-live">
                               {discount}
                             </li>
                           ))}
