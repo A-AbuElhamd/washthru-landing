@@ -6,6 +6,7 @@ import { useTranslation } from 'next-i18next/pages';
 import { Seo } from '@/components/shared/Seo';
 import { Header } from '@/components/shared/Header';
 import { Footer } from '@/components/shared/Footer';
+import Link from 'next/link';
 import { Container } from '@/components/shared/Container';
 import { Reveal } from '@/components/shared/Reveal';
 import { getAllBlueprints } from '@/utils/blueprints';
@@ -129,9 +130,7 @@ const BlueprintsIndexPage: NextPage<BlueprintsIndexPageProps> = ({ plans }) => {
     setVariant(group.variants[0].streetConfig);
   }
 
-  // Real site never has any `مراكز الخدمة` (service-center) plans — every
-  // combination under that category shows the empty state.
-  const visiblePlans = category === 'station' ? plans.filter((plan) => plan.streetConfig === variant) : [];
+  const visiblePlans = plans.filter((plan) => plan.planType === category && plan.streetConfig === variant);
 
   return (
     <>
@@ -219,9 +218,11 @@ const BlueprintsIndexPage: NextPage<BlueprintsIndexPageProps> = ({ plans }) => {
               ))}
             </div>
 
-            {/* Level 2: street count */}
+            {/* Level 2: street count — real site reads right-to-left in AR
+                (شارع واحد first/rightmost, 4 شوارع last/leftmost), the
+                reverse of the underlying DOM order. */}
             <div className="mt-1 flex min-h-20 flex-wrap items-stretch justify-center gap-x-1">
-              {STREET_GROUPS.map((group) => (
+              {(locale === 'ar' ? [...STREET_GROUPS].reverse() : STREET_GROUPS).map((group) => (
                 <button
                   key={group.key}
                   type="button"
@@ -278,7 +279,10 @@ const BlueprintsIndexPage: NextPage<BlueprintsIndexPageProps> = ({ plans }) => {
                     <Reveal key={plan.slug} className="w-full max-w-[416px]">
                       {/* Real `.flex-block` — bordered card, border turns
                           black on hover (not blue). */}
-                      <div className="flex h-full flex-col overflow-hidden rounded-md border border-[#bbb] transition-colors duration-300 hover:border-black">
+                      <Link
+                        href={`/blueprints/${plan.slug}`}
+                        className="flex h-full flex-col overflow-hidden rounded-md border border-[#bbb] transition-colors duration-300 hover:border-black"
+                      >
                         <div className="relative h-[279px] w-full">
                           <Image
                             src={plan.imageUrl}
@@ -309,7 +313,7 @@ const BlueprintsIndexPage: NextPage<BlueprintsIndexPageProps> = ({ plans }) => {
                             </div>
                           </dl>
                         </div>
-                      </div>
+                      </Link>
                     </Reveal>
                   ))}
                 </div>

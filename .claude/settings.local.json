@@ -59,7 +59,11 @@
       "Bash(grep -n 'book-wrap-02\\\\|book_text_wrap-02\\\\|div-block-2185\\\\|img_book_wrap-02' /c/Users/ASUS/AppData/Local/Temp/claude/W--ai-apps/56c51808-ecdd-42ab-85d2-3f2c213e1494/scratchpad/real-assets/wash-thru.webflow.css)",
       "Bash(rm -f W:/ai-apps/content/blueprints/ar/service-center-*.json W:/ai-apps/content/blueprints/en/service-center-*.json *)",
       "Bash(rm -f W:/ai-apps/content/blueprints/en/*.json *)",
-      "Bash(rm -f \"W:/ai-apps/src/pages/blueprints/[slug].tsx\")"
+      "Bash(rm -f \"W:/ai-apps/src/pages/blueprints/[slug].tsx\")",
+      "Bash(rm -f W:/ai-apps/content/blueprints/ar/*.json *)",
+      "Bash(grep -n '^\\\\.section-8\\\\|^\\\\.div-block-2114\\\\b' /c/Users/ASUS/AppData/Local/Temp/claude/W--ai-apps/56c51808-ecdd-42ab-85d2-3f2c213e1494/scratchpad/real-assets/wash-thru.webflow.css)",
+      "Bash(grep -n '\\\\-\\\\-white-smoke:' /c/Users/ASUS/AppData/Local/Temp/claude/W--ai-apps/56c51808-ecdd-42ab-85d2-3f2c213e1494/scratchpad/real-assets/wash-thru.webflow.css)",
+      "Bash(grep -n '^\\\\.blog-post-wrap\\\\|^\\\\.blog-post-img-01\\\\|^\\\\.blog-post-img-02\\\\|^\\\\.blog-post-img-03\\\\|^\\\\.blog-post-text-01\\\\|^\\\\.heading-8\\\\|^\\\\.blog-tab\\\\b\\\\|^\\\\.blog-tabs-wrap\\\\|^\\\\.blog-collection-list\\\\|^\\\\.blog-wrap-01\\\\|^\\\\.flex-block-17\\\\|^\\\\.blog-tab-pane-wrap' /c/Users/ASUS/AppData/Local/Temp/claude/W--ai-apps/56c51808-ecdd-42ab-85d2-3f2c213e1494/scratchpad/real-assets/wash-thru.webflow.css)"
     ]
   }
 }

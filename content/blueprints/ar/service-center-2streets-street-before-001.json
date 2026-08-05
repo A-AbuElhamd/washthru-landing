@@ -1,0 +1,39 @@
+{
+  "slug": "service-center-2streets-street-before-001",
+  "locale": "ar",
+  "title": "مخطط محطة كبيرة على شارع واحد",
+  "intro": "مخطط يتضمن مركزًا لغسيل السيارات بشكل اوتوماتيكي فعال. تم وضع المركز بإستراتيجية لتسهيل الوصول إليه وزيادة الرؤية من قبل المارة والعملاء المحتملين. يتميز المركز ببتوفر مساحة واسعة جداً لمواقف السيارات ما قبل الغسيل وسهولة الدخول والخروج بعد الغسيل.",
+  "imageUrl": "https://cdn.prod.website-files.com/63ad5763910c705357b1c574/64abfbba82ad9b23af8590c5_Plan%2003.jpg",
+  "planType": "station",
+  "streetConfig": "one-street",
+  "planNumber": "S001",
+  "measurementLabel": "00000",
+  "areaLabel": "00000",
+  "ideaLabel": "واش ثرو",
+  "sketchfabEmbedUrl": "https://sketchfab.com/models/ba69b0bce126490391c59b2595aa3d6d/embed?annotations_visible=1&preload=1",
+  "drawingImageUrl": "https://cdn.prod.website-files.com/63ad5763910c705357b1c574/64a4155514ae0c3c3d27b18c_03.png",
+  "features": [
+    {
+      "title": "مركز خدمة 24 ساعة مليئة بخدمات السيارات.",
+      "description": "وجود خدمة 24 ساعة يعني أن المركز مفتوح على مدار الساعة، بما في ذلك أيام الأسبوع والعطلات. بالتالي، يمكن للأشخاص الاستفادة من خدمات المركز في أي وقت يحتاجونه، سواء كان ذلك في ساعات النهار أو الليل.",
+      "imageUrl": "https://cdn.prod.website-files.com/63ad5763910c705357b1c574/64aabf484b3663ac5ddd0f13_Plan-5-1.jpg"
+    },
+    {
+      "title": "توفير مساحة واسعة جداً لمواقف السيارات ما قبل غسيل السيارات الآلي.",
+      "description": "هناك منطقة واسعة تم تجهيزها خصيصًا لوقوف السيارات قبل أن يتم غسيلها بواسطة آلة الغسيل الآلي. هذا يعني أن هناك مساحة كافية لعدد كبير من السيارات للانتظار قبل الدخول إلى عملية الغسيل، وبالتالي لا يحدث ازدحام أو ضيق في المساحة.",
+      "imageUrl": "https://cdn.prod.website-files.com/63ad5763910c705357b1c574/64aabf4b317b2e14c999b4bd_Plan-5-2.jpg"
+    },
+    {
+      "title": "مساحة واسعة لخدمة السيارات ما بعد غسيل السيارات الآلي.",
+      "description": "بعد أن يتم غسيل السيارات ألياً، يوجد مكان واسع ومناسب مخصص لتقديم الخدمات الأخرى للسيارات. هذا المكان مختص لخدمات ما بعد الغسيل من تنشيف وتلميع وخدمات السيارات الاخرى.",
+      "imageUrl": "https://cdn.prod.website-files.com/63ad5763910c705357b1c574/64aabf4d9d5b566a4d01e4ac_Plan-5-3.jpg"
+    },
+    {
+      "title": "انسيابية خروج السيارات ما بعد غسيل السيارات الآلي.",
+      "description": "بعد تنظيف السيارات باستخدام آلة الغسيل، يكون خروج السيارات من المكان المخصص للغسيل يتم بسلاسة ودون مشاكل. يشير ذلك إلى وجود تنظيم جيد وتدفق سلس لحركة المرور، مما يجعل عملية خروج السيارات بعد الغسيل يسيرة ومريحة.",
+      "imageUrl": "https://cdn.prod.website-files.com/63ad5763910c705357b1c574/64aabf50a446d8dc44a5e4f0_Plan-5-4.jpg"
+    }
+  ],
+  "pdfUrl": "https://cdn.prod.website-files.com/63aad373fdf77ff7df65db58/64d9fdeb13e9e2fb15aef337_AR-S001.pdf",
+  "footerCoverImageUrl": "https://cdn.prod.website-files.com/63ad5763910c705357b1c574/64b0065de95f31b1c39dd4b8_03.png"
+}

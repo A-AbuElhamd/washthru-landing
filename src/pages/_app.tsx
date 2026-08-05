@@ -6,6 +6,7 @@ import { appWithTranslation, useTranslation } from 'next-i18next/pages';
 import { LazyMotion, domAnimation, MotionConfig } from 'framer-motion';
 import { ThemeProvider } from '@/theme/ThemeProvider';
 import { SmoothScrollProvider } from '@/components/providers/SmoothScrollProvider';
+import { BackToTop } from '@/components/shared/BackToTop';
 import { JsonLd } from '@/components/shared/JsonLd';
 import { organizationSchema } from '@/utils/schema';
 import { LOCALE_DIR, resolveLocale } from '@/i18n/config';
@@ -59,6 +60,7 @@ function App({ Component, pageProps }: AppProps) {
               {t('a11y.skipToContent')}
             </a>
             <Component {...pageProps} />
+            <BackToTop />
             <Script
               id="getbutton-widget"
               strategy="afterInteractive"

@@ -129,12 +129,12 @@ export function Header() {
         <div className="hidden items-center gap-3 lg:flex">
           <ContactButtons />
           <LocaleSwitcher />
-          <ThemeToggle />
+          {/* <ThemeToggle />  off theme until we have a better solution for the flash of unstyled content (FOUC) issue. See */ }
         </div>
 
         <div className="flex items-center gap-2 lg:hidden">
           <LocaleSwitcher />
-          <ThemeToggle />
+          {/* <ThemeToggle />  off theme until we have a better solution for the flash of unstyled content (FOUC) issue. See */ }
           <button
             type="button"
             aria-expanded={mobileOpen}

@@ -1,0 +1,39 @@
+{
+  "slug": "station-1street-001",
+  "locale": "ar",
+  "title": "مخطط محطة صغيره على شارع واحد",
+  "intro": "مخطط يهدف إلى توفير خدمات غسيل السيارات بشكل سهل وسريع. يتميز المخطط بتوفر مساحة واسعة لمواقف ما قبل الغسيل من دون زحام او عوائق وسهولة رؤية الجهاز من قبل المارة والعملاء المحتملين ايضاً بسهولة الدخول والخروج من دون اي عوائق.",
+  "imageUrl": "https://cdn.prod.website-files.com/63ad5763910c705357b1c574/64ae6dbf4337a0238df60921_Plan%2006.jpg",
+  "planType": "station",
+  "streetConfig": "one-street",
+  "planNumber": "S003",
+  "measurementLabel": "34*30 متر",
+  "areaLabel": "1020 متر مربع",
+  "ideaLabel": "واش ثرو",
+  "sketchfabEmbedUrl": "https://sketchfab.com/models/da72a1347a4d4fa1a890c010c24ccee5/embed?annotations_visible=1&preload=1",
+  "drawingImageUrl": "https://cdn.prod.website-files.com/63ad5763910c705357b1c574/64a415909797f2ad9c8e8f4c_06.png",
+  "features": [
+    {
+      "title": "توفير مساحة واسعة لمواقف ما قبل ( مواقف طابور ).",
+      "description": "هناك منطقة واسعة تم تجهيزها خصيصًا لوقوف السيارات قبل أن يتم غسيلها بواسطة آلة الغسيل الآلي. هذا يعني أن هناك مساحة كافية لعدد كبير من السيارات للانتظار قبل الدخول إلى عملية الغسيل، وبالتالي لا يحدث ازدحام أو ضيق في المساحة.",
+      "imageUrl": "https://cdn.prod.website-files.com/63ad5763910c705357b1c574/64aac0943be5dab60a6f5d57_Plan-9-1.jpg"
+    },
+    {
+      "title": "رؤية واضحة لجهاز غسيل للسيارات الآلي عند زوار المحطة أثناء الدخول .",
+      "description": "يمكن رؤية جهاز غسيل السيارات الآلي بوضوح من الشارع الرئيسي والفرعي. ببساطة، فإن الأشخاص الذين يمرون على الشارع الرئيسي أو الفرعي يستطيعون رؤية الجهاز المستخدم لغسيل السيارات بوضوح.",
+      "imageUrl": "https://cdn.prod.website-files.com/63ad5763910c705357b1c574/64aac0971ccddd56ccb55077_Plan-9-2.jpg"
+    },
+    {
+      "title": "انسيابية الدخول والخروج لجهاز غسيل السيارات الآلي من غير أي عوائق.",
+      "description": "هناك مساحة كبيرة تم تخصيصها لتنظيم سيارات العملاء في صف واحد أو طابور قبل أن يتم غسيلها. يتيح ذلك ترتيب السيارات بشكل منظم وتنظيم العملية بفعالية.",
+      "imageUrl": "https://cdn.prod.website-files.com/63ad5763910c705357b1c574/64aac099c09d97fe04c97c49_Plan-9-3.jpg"
+    },
+    {
+      "title": "سهولة الخروج ما بعد الغسيل في نهاية المحطة.",
+      "description": "بعدما يتم الانتهاء من عملية الغسيل، يكون من السهل للأشخاص الموجودين في المحطة الخروج منها. هذا يعني أنه لا توجد عوائق أو صعوبات تحول دون خروجهم بعد انتهاء عملية الغسيل.",
+      "imageUrl": "https://cdn.prod.website-files.com/63ad5763910c705357b1c574/64aac09c9aa6a67097913425_Plan-9-4.jpg"
+    }
+  ],
+  "pdfUrl": "https://cdn.prod.website-files.com/63aad373fdf77ff7df65db58/64d9fdea9cc52bd948dfc048_AR-S003.pdf",
+  "footerCoverImageUrl": "https://cdn.prod.website-files.com/63ad5763910c705357b1c574/64b006b60d20e58cfb980cfa_06.png"
+}

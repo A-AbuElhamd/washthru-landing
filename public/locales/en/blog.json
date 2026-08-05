@@ -1,7 +1,24 @@
 {
   "index": {
-    "heading": "WashThru Blog",
-    "subtitle": "Insights on automatic car wash technology, business feasibility, and industry trends from the WashThru team."
+    "heading": "Blog",
+    "subtitle": "For every entity looking for smart and highly productive solutions in the car wash sector, we look forward to working with you and to be success partners in your projects. We are also pleased to communicate with you at Wash Thru through our following channels:",
+    "tabs": {
+      "production": "Production",
+      "marketing": "Marketing",
+      "automation": "Automation",
+      "all": "All"
+    },
+    "subTabs": {
+      "production": ["Industrial Production", "Engineering Production", "All"],
+      "marketing": ["Online Marketing", "Field Marketing", "All"],
+      "automation": ["CNC", "Digital Control", "All"]
+    },
+    "banner": {
+      "titleLine1": "Resistant to",
+      "titleLine2": "natural factors",
+      "body": "The machine is designed to resist natural factors in our geographic region, in order to withstand high levels of dust, humidity, and salinity, ensuring the best possible quality and performance under local environmental conditions."
+    },
+    "readMore": "Read more..."
   },
   "post": {
     "author": "Written by",

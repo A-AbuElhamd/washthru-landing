@@ -110,7 +110,7 @@ export function Contact() {
               <input
                 id="contact-phone"
                 name="phone"
-                type="tel"
+                type="number"
                 required
                 autoComplete="tel"
                 placeholder={t('contact.form.phonePlaceholder')}

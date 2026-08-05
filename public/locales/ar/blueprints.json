@@ -29,7 +29,16 @@
     "measurementLabel": "القياس:",
     "areaLabel": "المساحة:",
     "planNumberLabel": "رقم المخطط:",
-    "ideaLabel": "فكره المخطط:"
+    "ideaLabel": "فكره المخطط:",
+    "viewDownload": "مشاهده / تحميل"
+  },
+  "detail": {
+    "shareLabel": "مشاركة:",
+    "shareWhatsapp": "مشاركة عبر واتساب",
+    "shareX": "مشاركة عبر إكس",
+    "shareFacebook": "مشاركة عبر فيسبوك",
+    "featuresHeadingLine1": "مميزات",
+    "featuresHeadingLine2": "المخطط"
   },
   "emptyState": "لا يوجد مخططات حالياً"
 }
