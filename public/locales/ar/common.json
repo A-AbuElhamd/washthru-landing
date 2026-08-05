@@ -63,6 +63,7 @@
   "a11y": {
     "skipToContent": "تخطَّ إلى المحتوى الرئيسي"
   },
+  "backToTop": "العودة إلى الأعلى",
   "errors": {
     "notFoundTitle": "الصفحة غير موجودة",
     "notFoundDescription": "الصفحة التي تبحث عنها غير موجودة أو ربما تم نقلها.",

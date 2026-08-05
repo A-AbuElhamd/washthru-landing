@@ -145,7 +145,7 @@ const KnowledgeLibraryPage: NextPage = () => {
                           dir="auto"
                           rel="noopener noreferrer"
                           style={{ backgroundImage: `url(${CTA_BUTTON_BG_URL})` }}
-                          className=" mt-auto flex h-11 pr-[4.8px] w-[155px] items-center self-start bg-cover bg-no-repeat ps-8 text-sm font-light text-white [filter:invert(1)_grayscale(1)] transition-all duration-300 hover:[filter:none]"
+                          className=" mt-auto flex h-11 pr-[4.7px] w-[155px] items-center self-start bg-cover bg-no-repeat ps-8 text-sm font-light text-white [filter:invert(1)_grayscale(1)] transition-all duration-300 hover:[filter:none]"
                         >
                           {t('knowledge-library:resources.viewDownloadCta')}
                         </a>

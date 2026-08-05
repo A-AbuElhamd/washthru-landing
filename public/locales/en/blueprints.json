@@ -29,7 +29,16 @@
     "measurementLabel": "Measurement:",
     "areaLabel": "Area:",
     "planNumberLabel": "Plan number:",
-    "ideaLabel": "Plan idea:"
+    "ideaLabel": "Plan idea:",
+    "viewDownload": "View / Download"
+  },
+  "detail": {
+    "shareLabel": "Share:",
+    "shareWhatsapp": "Share via WhatsApp",
+    "shareX": "Share via X",
+    "shareFacebook": "Share via Facebook",
+    "featuresHeadingLine1": "Plan",
+    "featuresHeadingLine2": "features"
   },
   "emptyState": "No plans currently available"
 }
